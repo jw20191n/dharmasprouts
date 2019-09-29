@@ -1,0 +1,210 @@
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+#yellow_button {
+
+    height: 58px;
+    width:300px;
+    background-color: #FDE47C;
+    border: none;
+    border-radius: 20px;
+    color: #4C5B5C;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+} 
+
+/********************     HEADER   ****************** */
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+}
+
+
+div#logo {
+    width: 50%
+}
+
+div#logo img {
+    margin-left: 220px;
+    margin-top: 20px;
+    width: 321px;
+    height:124px;
+}
+
+div#search-container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+div#search-container-1 form{
+    width: 300px;
+    margin-left: 220px;
+    float: right;
+}
+
+div#search-container-1 form input {
+    width:250px;
+}
+
+#lang {
+    float: right;
+    margin-left: 410px;
+    font-size: 15px;
+}
+
+/*******************   NAVIGATION BAR   *************************/
+
+nav {
+    background-color: #8EB1C7;
+}
+
+nav ul{
+    float:left;
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 220px;
+    overflow:hidden;
+	color: white;
+	padding: 0;
+	text-align:center;
+	-webkit-transition: max-height 0.4s;
+}
+
+
+nav a {
+	text-decoration:none;
+	color: inherit;
+}
+
+nav ul li {
+    width: 250px;
+	display:inline-block;
+	padding: 20px; 
+	font-size: 16px;
+	opacity: 1;
+}
+
+/* ***************************   CONTENT   ************************** */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-left: 220px;
+}
+
+/* -------------content 1: personilized search bar to open modal -------- */
+
+div#personalized_bar {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    background-color: #F5853F;
+    text-align: left;
+    color: white;
+}
+
+div#left {
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+div#right {
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+/* -----------------------content2: pic container--------------------- */
+
+#content_pic_container{
+    min-height: 350px;
+    min-width: 1000px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* --------------------------content3: tag part------------------- */
+
+#intro_tags {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #8EB1C7; */
+}
+
+
+#left-side {
+    width: 50%;
+    background-color: white;
+    color: #4C5B5C;
+}
+
+#right-side {
+    width: 50%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+ul#display-tags{
+    margin-top: 20px;
+    /* list-style-type: none; */
+}
+
+ul#display-tags a {
+	text-decoration:none;
+	color: inherit;
+}
+
+
+
+
+
+/* show_tags.html */
+
+div #outter_display_area {
+    background-color:#D8D8D8;
+    min-height: 200px;
+}
+
+div #inner{
+    background-color: white;
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prompt {
+    padding: 10px 15px 0px 15px;
+    color:#4C5B5C;
+}
+
+div .added_div {
+    width: 90%;
+    margin:auto;
+    color: #4C5B5C;
+}
+
+.added_div img.covers{
+    float:left;
+    width: 250px;
+    height: 250px;
+    padding: 10px 15px 10px 0px;
+}
+
+
+
