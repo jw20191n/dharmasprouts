@@ -5,7 +5,7 @@ const ulDisplay = document.getElementById('display-tags');
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    fetch('http://localhost:3004/data')
+    fetch('http://localhost:3000/data')
     .then(resp => resp.json())
     .then(data => {
         printTags(data);
