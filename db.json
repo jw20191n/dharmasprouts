@@ -12,6 +12,7 @@
 	"Edition": "(2009)",
 	"Notes": "Moody Cow is Peter, whose grandfather taught him a way to tune in with his angry feelings and settle his mind through focused meditation after a bad day. Learn how to make your own mind jar and control your negative emotions! The publisher, Wisdom Publications, is affiliated with the Foundation for the Preservation of Mahayana Tradition.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number PZ10.3.",
+	"Url": "images/01-moodycow.png",
 	"id": 1
 },
 {
@@ -27,6 +28,7 @@
 	"Edition": "first edition (1998)",
 	"Notes": "This book tells the story of the search for the successor of the thirteenth Dalai Lama, after his passing in 1933. With simplicity and beauty, the author blends text and illustrations to describe the extraordinary life and vision of a kind and beloved master. The author is a Buddhist practitioner. Foreword written by HH Dalai Lama.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ7935 .B777.",
+	"Url": "images/02-dalailamademi.png",
 	"id": 2
 },
 {
@@ -42,6 +44,7 @@
 	"Edition": "first Square Fish edition (February 2012)",
 	"Notes": "Ping, the hero of this Chinese folktale, is unable to grow the seed distributed by the Emperor. This book will help you determine what is best: the empty truth or the beauty of illusion. Demi's books for children have been awarded for making a positive difference in the world.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number PZ8.1.D38.",
+	"Url": "images/03-emptypot.png",
 	"id": 3
 },
 {
@@ -49,7 +52,7 @@
 	"Name": "Anh's Anger", 
 	"Author": ["Gail Silver"],
 	"Tags": ["meditation", "family relationships", "Age 2-5"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Hardcover", 
 	"Pages": 36,
 	"Illustrator": ["Christiane Kromer"],
@@ -57,6 +60,7 @@
 	"Edition": "first edition (2009)",
 	"Notes": "By “sitting” with his anger, Anh learns how to identify and deal with his feelings. Using a variety of techniques, Anh is able to calm himself down and transform his strong emotions. Based on teachings on mindfulness and Buddhism by the Vietnamese Zen Master Thich Nhat Hanh, a well-known poet and peace activist.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number PZ7.S58567.",
+	"Url": "images/04-anhsanger.png",
 	"id": 4
 
 },
@@ -73,6 +77,7 @@
 	"Edition": "(1991)",
 	"Notes": "In this bi-lingual book, two Tibetan refugee children living in India search for their homeland, and find it within their hearts and minds. Richly illustrated in Tibetan style, it encourages materials for children to explore Tibetan letters.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number PZ90 .T58.",
+	"Url": "images/05-wherestibet.png",
 	"id": 5
 },
 {
@@ -88,6 +93,7 @@
 	"Edition": "second edition, revised and augmented (2009)",
 	"Notes": "This adaptation of a Jataka story of one of the Buddha's previous lives teaches that genuine loving kindness is extended even to those who are unpleasant and rude. A kind woodpecker saves the life of an ungrateful lion who later reviles him, but the woodpecker's kindness and friendship remains unchanged. At the end, there is a guide for parents and teachers on the story, bringing the story to life, teaching values through play, active reading, and daily activities.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5.",
+	"Url": "images/06-friendtoall.png",
 	"id": 6
 },
 {
@@ -103,6 +109,7 @@
 	"Edition": "first edition (2011)",
 	"Notes": "This book was carefully produced by HE Dagmo Kalden D. Sakya, the wife of His Holiness the Ratna Vajra Sakya, to teach young children all over the world about Mahasiddha Virupa, one of the famous eighty-four great Indian Masters who attained great realizations in one lifetime. An explanation of terms and expressions, and a Q&A section, can be found at the end of the book.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ7672.4 .D63.",
+	"Url": "images/07-virupa.png",
 	"id": 7
 },
 {
@@ -118,6 +125,7 @@
 	"Edition": "2nd edition (2011)",
 	"Notes": "In the graceful telling of Siddhartha’s life - his childhood, his awakening and his teachings - sensitive issues such as death and suffering are touched upon. Learning about Buddha can help children become more thoughtful and aware of altruism, nonviolence and loving-kindness. The publisher, Wisdom Publications, is affiliated with the Foundation for the Preservation of Mahayana Tradition.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ892 .L36.",
+	"Url": "images/08-siddhartha.png",
 	"id": 8
 },
 {
@@ -133,6 +141,7 @@
 	"Edition": "Reprinted (August, 2001)",
 	"Notes": "This is a compilation of several Amar Chitra Katha titles (Buddha; Angulimala; Amrapali and Upagupta; King Kusha; and The Acrobat), stories that teach about right conduct, good deeds, nonviolence, devotion and skillfulness. The comic-book style of the compilation is an interesting and fun way to learn about Indian mythology and the Buddha's teachings.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ882 .P35.",
+	"Url": "images/09-buddhiststories.png",
 	"id": 9
 },
 {
@@ -148,6 +157,7 @@
 	"Edition": "revised edition (2001)",
 	"Notes": "A Tibetan folk tale about the blessings of prayers to Tara that turn sadness to happiness for a king, his beautiful daughter, and her true love. In Tibetan and English with illustrations in the Tibetan style.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number GR337 .S56.",
+	"Url": "images/10-princessmetok.png",
 	"id": 10
 },
 {
@@ -163,6 +173,7 @@
 	"Edition": "second edition, revised and augmented (2010)",
 	"Notes": "This adaptation of a Jataka story of one of the Buddha's previous lives explains how the merit of generosity brings both temporary and ultimate happiness. A generous rich man loses his possessions but becomes even more generous, eventually attaining the perfection of wisdom. At the end, there is a guide for parents and teachers on the story, bringing the story to life, active reading and playing, daily activities, and vocabulary.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5H43.",
+	"Url": "images/11-heartofgold.png",
 	"id": 11
 },
 {
@@ -178,6 +189,7 @@
 	"Edition": "(2017)",
 	"Note": "A collection of short essays by young monks in Sakya Gongkar Choede Monastery on topics that inspire them: 'The most unforgettable day in my life,' 'Monastery Life,' 'My root guru,' etc. Provides a sweet and poignant look inside the lives and thoughts of youth growing up in a monastery in India.",
 	"Access": "This book is out of print. A copy is available for review in the Tsechen Kunchab Ling Library, 12 Edmunds Lane, Walden NY.",
+	"Url": "images/12-gongkar.jpg",
 	"id": 12
 },
 {
@@ -193,6 +205,7 @@
 	"Edition": "(2017)",
 	"Notes": "The life of the great master Milarepa comes up as a comic book as a initiative of the Council for Tibetan Education in order to bring out more general reading materials for Tibetan readers particularly children.",
 	"Access": "The book is available in both Tibetan and English, it can be ordered online and is also available in the TKL library, call number BQ7950 .M557 198.",
+	"Url": "images/13-milarepa.jpg",
 	"id": 13
 },
 {
@@ -208,6 +221,7 @@
 	"Edition": "U.S. edition (1985)",
 	"Notes": "This entertaining encyclopedia provides an overview of a myriad number of topics in Buddhism, such as the differentiation between Buddha and Buddhists, Buddha's life and teachings, teachings on living and dying, holy dates and places, and more. A glossary, as well as suggested books for further reading, are included at the end of the encyclopedia.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ4035 .B36.",
+	"Url": "images/14-buddhistworld.jpg",
 	"id": 14
 },
 {
@@ -224,6 +238,7 @@
 	"Edition": "first edition (May 10, 1998)",
 	"Notes": "This illustrated book by a Thai monastic scholar presents thought-provoking perspectives on the Buddha's life and activities, relating them to the concerns of contemporary society. It contains many little-known facts about the Buddha's life combined with quotations from the sutras and contemporary illustrations.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ882 .W67.",
+	"Url": "images/15-greatestman.png",
 	"id": 15
 },
 {
@@ -231,7 +246,7 @@
 	"Name": "The Monster of Lotus Lake", 
 	"Author": ["Dharma Publishing"],
 	"Tags": ["wisdom", "compassion and loving kindness", "Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Age 6-8"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 36,
 	"Illustrator": ["Sherri Nestorowich"],
@@ -239,12 +254,13 @@
 	"Edition": "second edition revised and augmented (2009)",
 	"Notes": "This adaptation of a Jataka story of one of the Buddha's previous lives teaches how decisions about the choices we make are best when filled with both wisdom and compassion. A wise brother saves his brother and step-brother from a demon by careful analysis of right and wrong and ultimately converts the demon who threatened them into a friend. The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5W56.",
+	"Url": "images/16-monsteroflotuslake.png",
 	"id": 16
 },
 {
 	"ISBN": "0060391162 / 9780060391164",
 	"Name": "Freedom in Exile: the autobiography of the Dalai Lama", 
-	"Author": ["the XIV Dalai Lama, Tenzin Gyatso"],
+	"Author": ["the XIV Dalai Lama", "Tenzin Gyatso"],
 	"Tags": ["great masters", "nonviolence", "Age 13+"],
 	"Language": ["English"],
 	"CoverType": "Hardcover", 
@@ -254,6 +270,7 @@
 	"Edition": "first edition (1990)",
 	"Notes": "Read the story of this great master, told by the 14th Dalai Lama himself, a brilliant, noble and humble human being with a keen sense of humor. The autobiography unearths Tibetan culture and the historic events which brought remarkable Buddhist teachers to the West, and also focuses on the Dalai Lama’s philosophy on tradition, environment, science and world conflicts.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ7935 .B777.",
+	"Url": "images/17-dalailama.png",
 	"id": 17
 },
 {
@@ -269,6 +286,7 @@
 	"Edition": "(1991)",
 	"Notes": "This is an in-depth recount of the life of the great master Gautama Buddha over the course of his 80 years. Written by Thich Nhat Hanh, a renowned Zen master, poet, and peace activist. The Appendix contains helpful abbreviations used for sutras.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ882 .N4813.",
+	"Url": "images/18-thichnhathanh.png",
 	"id": 18
 },
 {
@@ -285,6 +303,7 @@
 	"Edition": "(1997)",
 	"Notes": "The book is a very clear and interesting introduction to Tibetan Buddhism by a Western scholar who became a Sakyapa monk. The forty-one chapters explain the basics of Buddhism, Mahayana, Vajrayana, and the abhidharma, deftly combining Tibetan and Western approaches." ,
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ4165 .D45.",
+	"Url": "images/19-treeofenlightenment.png",
 	"id": 19
 },
 {
@@ -299,7 +318,8 @@
 	"Publisher": "Khenpo Palden Gyatso's Monastery",
 	"Edition": "(2018)",
 	"Notes": "Learn about the inspiring life of the 41st Sakya Trizin, head of the Sakya Order of Tibetan Buddhism, through the depiction of his devoted scholar, Khenpo Palden Gyatso. Beautiful illustrations portray elements such as Tibetan culture, lineage gurus, Sakya main deities, and more.",
-	"Access": "This book is available from address: 中国四川省阿坝藏族羌族自治州阿坝县阿坝镇阿坝县香清塘街15-4  感恩吃素食, zipcode：624600, receiver: 唐卡加措, contact number: 0086-13438790259. And a copy is available for review in the Tsechen Kunchab Ling Library, 12 Edmunds Lane, Walden NY.",
+	"Access": "This book is available from address: Xiang Qing Tang Street 15-4 , Aba Town, Aba County, Aba Prefecture, Sichuan Province, People's Republic of China(中国四川省阿坝藏族羌族自治州阿坝县阿坝镇阿坝县香清塘街15-4  感恩吃素食), zipcode：624600, receiver: Tang Ka Jia Cuo(唐卡加措), contact number: 0086-13438790259. And a copy is available for review in the Tsechen Kunchab Ling Library, 12 Edmunds Lane, Walden NY.",
+	"Url": "images/20-beautifulgarland.png",
 	"id": 20
 },
 {
@@ -307,7 +327,7 @@
 	"Name": "The Boy Who Understood Animals", 
 	"Author": ["Yeshi Dorjee", "John S Major"],
 	"Tags": ["compassion and loving kindness", "folktales", "Age 2-5", "Age 6-8"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 27,
 	"Illustrator": ["unknown"],
@@ -315,6 +335,7 @@
 	"Edition": "(July 19, 2017)",
 	"Notes": "This illustrated short tale presents Tenzin's compassionate efforts to help a sheep and a sick girl, with whom he ends up getting married to. This story is an adaptation from The Three Boys and Other Buddhist Folktales from Tibet, written by the same authors. Highlights of the book include a citation of a sutra at the beginning, and a list of suggested discussion questions at the end.",
 	"Access": "This book can be ordered online.",
+	"Url": "images/21-boywhounderstoodanimals.png",
 	"id": 21
 },
 {
@@ -331,6 +352,7 @@
 	"Edition": "(1997)",
 	"Notes": "The book is a very clear and interesting introduction to Tibetan Buddhism by a Western scholar who became a Sakyapa monk. The forty-one chapters explain the basics of Buddhism, Mahayana, Vajrayana, and the abhidharma, deftly combining Tibetan and Western approaches.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ4055 .D44.",
+	"Url": "images/22-fundamentals.png",
 	"id": 22
 },
 
@@ -347,6 +369,7 @@
 	"Edition": "(2000)",
 	"Notes": "A collection of mural paintings from several temples in Thailand, arranged chronologically with commentaries by ecclesiastical leaders and members of the Thai Theravada Sangha. A masterpiece!",
 	"Access": "This book can be ordered online.",
+	"Url": "images/23-thaipaintings.jpg",
 	"id": 23
 },
 {
@@ -362,6 +385,7 @@
 	"Edition": "first edition (1991)",
 	"Notes" : "Written in comic book-style, this is the classical story of the life of the great Kagyu master Milarepa. It demonstrates that black deeds such as jealousy and hatred perpetuate destruction, fear, and unhappiness, and that white deeds accumulated on the Dharma path, especially diligence, meditation, and most importantly, following the guru's advice, bring happiness and eventual liberation from samsara. A dramatic story filled with miraculous deeds and accomplishments, it is sure to inspire youth to virtue.",
 	"Access": "This book can be ordered online.",
+	"Url": "images/24-magiclifeofmilarepa.jpg",
 	"id": 24
 },
 {
@@ -377,6 +401,7 @@
 	"Edition": "first edition (1992)",
 	"Notes": "The biography of the Nyingma master, Chagdud Tulku, the great lama Sherab Gyaltsen in his previous life, is an inspirational story. Through this book, one can explore Chagdud's life as a human being who experienced situations of desire and aversion, yet always applied Dharma practices in order to purify the obstacles he faced. His life demonstrates that one can still improve and prevail amidst the difficulties that arise in samsara.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ946 .A345.",
+	"Url": "images/25-lordofthedance.png",
 	"id": 25
 },
 {
@@ -392,6 +417,7 @@
 	"Edition": "first edition (2008)",
 	"Notes": "Inspired by Theravada teachings, this is a collection of lesson plans based on moral values demonstrated by the life of Buddha. This is a great resource for Dharma centers or for homeschooling dharma studies. Lessons are skillfully organized in the following structure: - Opening chants, meditation and review of last lesson - Question to think about before the story - The story - Questions about the story - Quotation from the Buddha about the moral of the story - Application of the moral of the story to our daily lives - Activity to reinforce the lesson - Closing chant",
 	"Access": "This book can be ordered online.",
+	"Url": "-",
 	"id": 26
 },
 {
@@ -407,6 +433,7 @@
 	"Edition": "(1996)",
 	"Notes": "This ancient Tibetan tale follows King Gesar as he frees an enslaved kingdom from evil magicians, saves his people and others by releasing magical herbs to all, and shows people how to live with compassion and peace. Read about how peace, harmony, and enlightenment will prevail in the world! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.", 
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BL 1950 .T5S34.",
+	"Url": "images/27-secretofhealing.png",
 	"id": 27
 },
 {
@@ -422,6 +449,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "When the lake creatures are endangered, the king of the fishes successfully uses his past virtuous actions to beseech higher powers to save them. How can being virtuous help us in our own lives? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.", 
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5C66.",
+	"Url": "images/28-fishking.png",
 	"id": 28
 },
 {
@@ -437,6 +465,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "Despite the fact that the mischievous monkey constantly teases the buffalo, the buffalo remains patient. His continued compassion eventually teaches the monkey the values of kindness, patience, and sensitivity. When can patience help us in our own lives? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5M34.",
+	"Url": "images/29-magicofpatience.png",
 	"id": 29
 },
 {
@@ -452,6 +481,7 @@
 	"Edition": "third edition (2009)",
 	"Notes": "A noble doe named Graceful offers her life to save her mate Golden Foot, the king of the deer, when he is caught in a hunter’s snare. This act of loving kindness changes the hunter who then releases Golden Foot. Golden Foot and Graceful set a wise and compassionate example for us all! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5M36.",
+	"Url": "images/30-goldenfoot.png",
 	"id": 30
 },
 {
@@ -467,6 +497,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "In this story about the importance of friends, a hawk, following his wife’s advice, becomes friends with an osprey, a tortoise, and a lion. When hunters try to capture their children, the friends come together and save the baby birds. How can you help your friends? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5N35.",
+	"Url": "images/31-valueoffriends.png",
 	"id": 31
 },
 {
@@ -482,6 +513,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "A king becomes trapped in a deep ravine, while trying to hunt a deer. The deer risks his own life to save his hunter. The grateful king renounces hunting and resolves to protect all the lives of all the forest creatures. How can we protect the lives of animals around us? This book serves as an inspiration for life practices. The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5P54.",
+	"Url": "images/32-preciouslife.png",
 	"id": 32
 },
 {
@@ -497,6 +529,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "A parrot lives in a fig tree surrounded by many other birds who continually search for better trees with the best fruit. However the parrot remains loyal to his friend, the tree, even when he is tested by the king of the gods. Let’s all become true, devoted friends like the parrot! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5P54",
+	"Url": "images/33-parrotandfigtree.png",
 	"id": 33
 },
 {
@@ -512,6 +545,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "After a king sends his hunters to trap him as a gift to his sick wife, the Golden Goose chooses to willingly go to the palace and teaches the king about compassion and goodness. We should all follow Golden Goose’s wise advice! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5.",
+	"Url": "images/34-wisdomofgoldengoose.png",
 	"id": 34
 },
 {
@@ -527,6 +561,7 @@
 	"Edition": "third edition (2010)",
 	"Notes" : "A wise quail teaches the other birds how to escape a hunter’s net through teamwork. The birds who learn to cooperate live in safety, while those who quarrel are caught. Let’s all learn how to work together! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5H76.",
+	"Url": "images/35-thehunter-quail.png",
 	"id": 35
 },
 {
@@ -542,6 +577,7 @@
 	"Edition": "second edition (2009)",
 	"Notes": "A young man realizes that his greed and dishonesty only harms himself after he unsuccessfully tries to cheat his older brother out of his inheritance. In the end the older brother shows his generosity and brotherly spirit by still sharing the inheritance with him. How does selfiness hurt us in our own lives? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5M5.",
+	"Url": "images/36-piecesofgold.png",
 	"id": 36
 },
 {
@@ -549,7 +585,7 @@
 	"Name": "A Wise Ape Teaches Kindness",
 	"Author": ["Dharma Publishing"],
 	"Tags": ["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "compassion and loving kindness", "Age 2-5", "Age 6-8"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback",
 	"Pages": 36,
 	"Illustrator": ["Andrea Kassof"],
@@ -557,6 +593,7 @@
 	"Edition": "second edition (2009)",
 	"Notes" : "A kind ape rescues a hungry farmer trapped in a ravine. However when the ape rests, the farmer tries to kill him. Nonetheless, the ape continues to be compassionate and brings the farmer to safety, teaching him a lesson. How can we be compassionate towards difficult people? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5W57.",
+	"Url": "images/37-awiseape.png",
 	"id":37
 },
 {
@@ -572,6 +609,7 @@
 	"Edition": "third edition (2009)",
 	"Notes" : "A king without an heir chooses to raise three birds as his children, but is mocked for doing so. In response, the king has the birds demonstrate their wisdom to the public. Their teachings are honored and heeded by all the people, who realize wisdom can come unusual sources. True leadership requires standing up for your beliefs and heeding the advice of wise counselors. The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5Z68.",
+	"Url": "images/38-threewisebirds.png",
 	"id": 38
 },
 {
@@ -587,6 +625,7 @@
 	"Edition": "first edition (1991)",
 	"Notes" : "A wise lion saves the forest animals from disaster after a young rabbit’s blind fear endangered them all. The rabbit and the other animals all learn how to cope with fear better. Learning how to deal with emotions such as fear is a step forward to become wiser. The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5C66.",
+	"Url": "images/39-rabbit-fear.png",
 	"id": 39
 },
 {
@@ -602,29 +641,15 @@
 	"Edition": "(1989)",
 	"Notes": "A rabbit offers his own body as food to a hungry stranger in an act of compassion. The rabbit is rewarded by being placed in the moon, where he remains to this day, reminding the world of the power of selflessness. After reading, look up at the moon and find the shape of the noble rabbit! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5R33.",
+	"Url": "images/40-rabbit-moon.png",
 	"id": 40
-},
-{
-	"ISBN": "0898001870",
-	"Name": "The Best of Friends", 
-	"Author": ["Dharma Publishing"],
-	"Tags": ["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Age 2-5", "Age 6-8"],
-	"Language": ["English"],
-	"CoverType": "Paperback", 
-	"Pages": 32,
-	"Illustrator": ["Rosalyn White"],
-	"Publisher": "Dharma Publishing", 
-	"Edition": "(1989)",
-	"Notes": "A gentle woodpecker shows true kindness and friendship when he helps a lion in need, without wishing for a reward. The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.",
-	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5B47.",
-	"id": 41
 },
 {
 	"ISBN": "9780898001951",
 	"Name": "The Courageous Captain", 
 	"Author": ["Dharma Publishing"],
 	"Tags": ["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Age 2-5", "Age 6-8"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 36,
 	"Illustrator": ["Rosalyn White"],
@@ -632,7 +657,8 @@
 	"Edition": "second edition (2009)",
 	"Notes" : "A famous retired sea captain accompanies a ship of young sailors who are searching for treasure and teaches them that good actions are more reliable than hopes. The sailors succeed when they finally follow the elderly captain’s advice. Whose advice should we listen to when we need help? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5C68.",
-	"id": 42
+	"Url": "images/41-courageouscaptain.png",
+	"id": 41
 },
 {
 	"ISBN": "9780898005202",
@@ -647,14 +673,15 @@
 	"Edition": "second edition (2009)",
 	"Notes" : "In return for saving a snake’s life, King Senaka is given a charm that allows him to understand him the speech of animals which he must keep secret on the cost of his life. However, he later endangers himself by agreeing to disclose it. In the end, King Senaka realizes the dangers of thoughtless promises, selfishness, and greed after being counseled by a wise goat. What must we consider when making a promise? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5M34.",
-	"id": 43
+	"Url": "images/42-kingwhounderstoodanimals.png",
+	"id": 42
 },
 {
 	"ISBN": "9780374335486",
 	"Name": "I Once Was a Monkey: Stories Buddha Told", 
 	"Author": ["Jeanne M. Lee"],
 	"Tags": ["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Age 6-8"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 40,
 	"Illustrator": ["Filomena Tuosto"],
@@ -662,7 +689,8 @@
 	"Edition":"(1999)",
 	"Notes": "A statue of Buddha comes to life to tell a group of animals stuck in a cave six stories of his past lives, known as Jataka tales. These stories teach the animals some of the central tenets of Buddhist teachings, such as compassion, honesty, and thinking before acting. Let’s pass our time with these animals and learn from the Buddha’s example!",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5L44.",
-	"id": 44
+	"Url": "images/43-iwasamonkey.png",
+	"id": 43
 },
 {
 	"ISBN": "9780893469566",
@@ -677,7 +705,8 @@
 	"Edition": "(2009)",
 	"Notes": "This picture book tells the story of Gautma Buddha’s life from birth to enlightenment in a simple and understandable manner for children. HH the 14th Dalai Lama wrote the foreword to the book and at the end of the book HH has advice geared towards children on how to meditate. After reading the Buddha’s story, let’s all follow his example and learn how to meditate!",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ882 .S74.",
-	"id": 45
+	"Url": "images/44-becomingbuddha.png",
+	"id": 44
 },
 {
 	"ISBN": "0898001439",
@@ -692,14 +721,15 @@
 	"Edition": "first edition (1990)",
 	"Notes" : "In a past life the Buddha was reincarnated as a Great Gift, a kind-hearted child of a minister. Great Gift seeing the problems of the poor seeks out a wish-fulfilling gem to help them. What can we do in our own lives to help the poor? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462 .E5G74.",
-	"id": 46
+	"Url": "images/45-greatgift.png",
+	"id": 45
 },
 {
 	"ISBN": "9781571747013",
 	"Name": "The Dalai Lama on What Matters Most, Conversations on Anger, Compassion, and Action",
 	"Author": ["Noriyuki Ueda"],
 	"Tags": ["compassion and loving kindness", "great masters", "Age 13+"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 311,
 	"Illustrator": ["-"],
@@ -707,7 +737,8 @@
 	"Edition": "(2013)",
 	"Notes" : "The book is a record of author’s interview with HH Dalai Lama. Short chapters on “What Can Buddhism Offer”, “Compassionate Anger”, “Love vs Attachment” and, “Enlightened Buddhism in Modern World.” Very accessible, friendly format not difficult language. Author teaches cultural anthropology and social reform theory at Tokyo Institute of Technology. Author has personal history of social activism and has been disappointed by his experience. He found those working for inner peace suffering inner turmoil. And that the turmoil was what informed their work in the world. Even though all members of his group preached peace and espoused the same goals, they could not work together harmoniously or peacefully. Author also experienced disappointment with traditional Japanese Buddhist practices labeling it “funeral buddhism” Author found Japanese monks preached compassion but failed in its practice. He brought these concerns and asked the HH Dalai Lama, how to create an altruistic society.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ7935 .B774.",
-	"id": 47
+	"Url": "images/46-dalailama-whatmattersmost.png",
+	"id": 46
 },
 {
 	"ISBN": "-",
@@ -722,7 +753,8 @@
 	"Edition": "(1958)",
 	"Notes" : "This book was made to be used in Sunday schools, in primary and secondary schools, and for home-instruction of children by parents. It includes prayers, stories, and test questions to accompany the major Buddhist teachings. The book was published by a group of Straits Chinese Buddhists.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ7935 .B774.",
-	"id": 48
+	"Url": "images/47-buddhistsundayschool.png",
+	"id": 47
 },
 {
 	"ISBN": "9789381607350",
@@ -737,14 +769,15 @@
 	"Edition": "(2012)",
 	"Notes": "This book is a compilation of Jataka tales, stories of the Buddha’s previous lives. Each tale is only one page long, includes an important lesson, and is accompanied by a beautiful illustration making them perfect short stories for children. You can make reading a tale or two part of your bedtime routine!",
 	"Access": "It can be ordered online.",
-	"id": 49
+	"Url": "images/48-101jatakatales.png",
+	"id": 48
 },
 {
 	"ISBN": "1559390204",
 	"Name": "The Buddha’s Question", 
 	"Author": ["W.W. Rowe"],
 	"Tags": ["compassion and loving kindness", "life of the Buddha", "karma, virtues and non-virtues","Buddha's previous lives aka Jataka tales", "Age 6-8", "Age 9-12"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback",
 	"Pages": 24,
 	"Illustrator": ["Pamlyn Grider"],
@@ -752,14 +785,15 @@
 	"Edition": "(1994)",
 	"Notes": "The Buddha teaches a group of children about loving kindness by recounting a story from his past life. This book is based on chapter thirty of Vietanmese Zen Buddhist teacher Thich Nhat Hanh’s recounting of the life and teachings of Gautama Buddha Old Path White Clouds. This version of the story is rhymed and has wonderful illustrations to make it more appealing to young children. The fun rhymes will make this your children’s favorite book in no time!",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ1462 .E5R69.",
-	"id": 50
+	"Url": "images/49-thebuddhasquestion.png",
+	"id": 49
 },
 {
 	"ISBN": "1574160818",
 	"Name": "Tibetan Tales for Little Buddha", 
 	"Author": ["Naomi C. Rose"],
 	"Tags": ["folktales", "refuge", "family relationships", "Age 6-8", "Age 9-12"],
-	"Language" : ["Tibetan", "English"],
+	"Language": ["Tibetan", "English"],
 	"CoverType": "Paperback", 
 	"Pages": 63,
 	"Illustrator": ["Naomi C. Rose"],
@@ -767,7 +801,8 @@
 	"Edition": "(2004)",
 	"Notes" : "With stories written in both English and Tibetan, this collection of three traditional tales include great insight into Tibetan culture and wisdom. The beginning of the book includes information on Tibet, a traditional mantra children can use, and has a list of vocabulary words relating to Buddhism and Tibet. HH the Dalai Lama wrote the foreword to the book.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number PZ90 .T58R67.",
-	"id": 51
+	"Url": "images/50-tibetantalesforlitttlebuddhas.png",
+	"id": 50
 },
 {
 	"ISBN": "0740746898",
@@ -782,7 +817,8 @@
 	"Edition": "(2004)",
 	"Notes": "This book can help children as young as eighteen months to learn how to meditate. The book includes full explanations, instructional illustrations, and testimonials from parents. With different meditation practices for various ages, abilities, and goals there is something here for everyone. Let’s learn how to meditate as a family!",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ5436 .D47.",
-	"id": 52
+	"Url": "images/51-babybuddhas.png",
+	"id": 51
 },
 {
 	"ISBN": "9780977333875",
@@ -797,14 +833,15 @@
 	"Edition": "(2008)",
 	"Notes": "This collection of maxims by non-sectarian Tibetan Buddhist teacher Lama Surya Das is a great source of advice for people of all ages. Pick up the book whenever you need a quick dose of wisdom.",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ5660 .S87.",
-	"id": 53
+	"Url": "images/52-wordsofwisdom.png",
+	"id": 52
 },
 {
 	"ISBN": "-",
 	"Name": "How Will I Behave Today and the Rest of My Life?", 
 	"Author": ["Venerable Wuling"],
 	"Tags": ["compassion and loving kindness", "karma, virtues and non-virtues", "Age 9-12", "Age 13+"],
-	"Language" : "English",
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 208,
 	"Illustrator": ["-"],
@@ -812,14 +849,15 @@
 	"Edition": "(2009)",
 	"Notes" : "This book is based around maxims from the book Guidelines for Being a Good Person, which were inspired by translations of Di Zi Gui, a centuries old children’s book based on ancient Confucian classics. It shows how to and why we should carry out these maxims, in an easily understandable manner for children. The author, Venerable Wuling, is an American Buddhist nun of the Pure Land school of Mahayana Buddhism.",
 	"Access": "This book can be ordered online.",
-	"id": 54
+	"Url": "images/53-howwillibehavetoday.png",
+	"id": 53
 },
 {
 	"ISBN": "0553363854",
 	"Name": "Buddha’s Little Instruction Book",
 	"Author": ["Jack Kornfield"],
 	"Tags": ["compassion and loving kindness", "refuge", "karma, virtues and non-virtues", "meditation", "Age 9-12", "Age 13+"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 151,
 	"Illustrator": ["-"],
@@ -827,14 +865,15 @@
 	"Edition": "(1994)",
 	"Notes": "This book includes practical Buddhist teachings and meditation practices for people of all ages. Let’s apply these maxims and methods in our own lives!",
 	"Access": "It can be ordered online and is also available in the TKL library, call number BQ5405 .K67.",
-	"id": 55
+	"Url": "images/54-buddhaslittlebook.png",
+	"id": 54
 },
 {
 	"ISBN": "9781844836239",
 	"Name": "Buddha at Bedtime", 
 	"Author": ["Dharmachari Nagaraja"],
 	"Tags": ["compassion and loving kindness", "life of the Buddha", "karma, virtues and non-virtues", "Buddha's previous lives aka Jataka tales", "meditation", "family relationships", "Age 6-8", "Age 9-12"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 144,
 	"Illustrator": ["-"],
@@ -842,14 +881,15 @@
 	"Edition": "(2008)",
 	"Notes" : "This book is great for Buddhist beginners. It includes an introduction for parents and children on the origins and key concepts of Buddhism, a step-by-step meditation guide suitable for children, and twenty Jataka tales with their key Buddhist teachings highlighted at the end of the stories. Let’s all lay the foundation for a more compassionate life!",
 	"Access": "It can be ordered online and is also available in the TKL library, call number J294.38 .N13B.",
-	"id": 56
+	"Url": "images/55-buddhaatbedtime.png",
+	"id": 55
 },
 {
 	"ISBN": "9781933605517",
 	"Name": "Samsara Dog", 
 	"Author": ["Helen Manos"],
 	"Tags": ["compassion and loving kindness", "karma, virtues and non-virtues", "death and rebirth", "Age 2-5", "Age 6-8"],
-	"Language" : ["English"],
+	"Language": ["English"],
 	"CoverType": "Paperback", 
 	"Pages": 20,
 	"Illustrator": ["Julie Vivas"],
@@ -857,6 +897,391 @@
 	"Edition": "American edition (2007)",
 	"Notes": "This book is a great natural way to introduce young children to the ideas of death, reincarnation, Samsara, Nirvana, and loving kindness. It follows a dog throughout his many reincarnations, until he finally is free from Samsara after understanding loving kindness. What are some of our own experiences with death?",
 	"Access": "It can be ordered online and is also available in the TKL library, call number PZ7 .M3166.",
+	"Url": "images/56-samsaradog.png",
+	"id": 56
+},
+{
+	"ISBN": "0152344659",
+	"Name": "Himalaya Vanishing Cultures", 
+	"Author": ["Jan Reynolds"],
+	"Tags": ["other", "Age 2-5", "Age 6-8"],
+	"Language": ["English"],
+	"CoverType": "Hardcover", 
+	"Pages": 30,
+	"Illustrator": ["-"],
+	"Publisher": "Harcourt Brace Jovanovich, Publishers", 
+	"Edition": "(1991)",
+	"Notes": "This book is a great introduction for children into the Sherpa way of life. What can we learn from these Buddhist Himilayan people?",
+	"Access": "It can be ordered online and is also available in the TKL library, call number DS485 .H6R48.",
+	"Url": "images/57-himalayavanishingcultures.png",
 	"id": 57
+},
+{
+	"ISBN": "1577314670",
+	"Name": "Tibetan Buddhist Altars A Pop-Up Gallery of Traditional Art and Wisdom", 
+	"Author": ["Robert Beer"],
+	"Tags": ["refuge", "meditation", "Age 2-5", "Age 6-8", "Age 9-12", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 7,
+	"Illustrator": ["Robert Beer"],
+	"Publisher": "New World Library", 
+	"Edition": "(2004)",
+	"Notes" : "This book is perfect for an addition to or the beginning of your family shrine. It includes pop-up versions of traditional thangkas for five deities. Each altar image of the deity is accompanied by a mantra for and basic information about said deity. It’s design makes it great for mantra recitation, meditation, and travel. Start your own altar at home!",
+	"Access": "It can be ordered online.",
+	"Url": "images/58-tibetanaltars.png",
+	"id": 58
+},
+{
+	"ISBN": "9780898000580",
+	"Name": "The Fourth of July New Dimensions of Freedom", 
+	"Author": ["Tarthang Tulku Rinpoche"],
+	"Tags": ["other","Age 9-12", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 125,
+	"Illustrator": ["-"],
+	"Publisher": "Dharma Publishing", 
+	"Edition": "(2015)",
+	"Notes": "This collection of essays is perfect for any Buddhist American who is wondering about the connection between America and Buddhism. It highlights and celebrates the shared values and symbols between both heritages. It also documents the spread of dharma in the US. The essays were originally speeches given on Fourth of July celebrations by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Why should Buddhist Americans feel proud and grateful for their forefathers?",
+	"Access": "This book can be ordered online.",
+	"Url": "images/59-fourthofjuly.png",
+	"id": 59
+},
+{
+	"ISBN": "9781561012725",
+	"Name": "Five Voices Five Faiths An Interfaith Primer", 
+	"Author": ["Anantanand Rambachan", "Yaakov Ariel", "Patricia Phelan", "Amanda Millay Hughes", "Amy Nelson"],
+	"Tags":["other", "Age 9-12", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 125,
+	"Illustrator": ["-"],
+	"Publisher": "Cowley Publications", 
+	"Edition": "second edition (2010)",
+	"Notes": "This primer shows what is special about The Dharma, amongst the major religions of the world. Designed to teach people about religions they may have no experience with, it is a great way to learn about the differences and similarities between various faiths. The Abbess of the Chapel Hill Zen Center wrote the section on Buddhism. Let’s be tolerant of other religions and remember the uniqueness of The Dharma!",
+	"Access": "This book can be ordered online.",
+	"Url": "images/60-fivevoices.png",
+	"id": 60
+},
+{
+	"ISBN": "0877734933 / 9780877734932",
+	"Name": "The Heart Treasure of the Enlightened Ones", 
+	"Author": ["Patrul Rinpoche", "with commentary by Dilgo Khyentse"],
+	"Tags": ["compassion and loving kindness", "meditation", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 290,
+	"Illustrator": ["-"],
+	"Publisher": "Shambhala Publications", 
+	"Edition": "(1992)",
+	"Notes" : "A beautiful lyric poem by the great 17th century Nyingma Saint Patrul Rinpoche extolling the true meaning of compassion and how to practice it in our daily lives. The commentary is made by the great Nyingma master Dilgo Khyentse Rinpoche.",
+	"Access":"This book can be ordered online and is also available in the TKL library, call number BQ4138 .T55.",
+	"Url": "images/61-hearttreasure.png",
+	"id": 61
+},
+{
+	"ISBN": "0980711436 / 9780980711431",
+	"Name": "Lundeeria: The Tale of a Journey to Another Land, Courage, and Compassion", 
+	"Author": ["Venerable Wuling"],
+	"Tags": ["compassion and loving kindness", "karma, virtues and non-virtues", "Age 6-8", "Age 9-12"],
+	"Language": ["English"],
+	"CoverType": "Paperback",
+	"Pages": 80,
+	"Illustrator": ["Ann Marie Napoli"],
+	"Publisher": "Pure Land College Press", 
+	"Edition": "(2011)",
+	"Notes": "This fictional tale by Venerable Wuling, an American Buddhist nun of the Pure Land school of Mahayana Buddhism, advocates that children have compassion for animals. It presents all animals as fully sentient beings who are worthy of respect and encourages going vegetarian. What can we do to help alleviate the suffering of animals?",
+	"Access": "This book can be ordered online.",
+	"Url": "images/62-lundeeria.png",
+	"id": 62
+},
+{
+	"ISBN": "9780545104623",
+	"Name": "Zen Ties", 
+	"Author": ["Jon J Muth"],
+	"Tags": ["compassion and loving kindness", "Age 2-5"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 40,
+	"Illustrator": ["Jon J Muth"],
+	"Publisher": "Scholastic Inc.", 
+	"Edition": "(2008)",
+	"Notes": "This delightful tale teaches children kindness in the tradition of Japanese Zen Buddhism in a subtle manner. Children will be so captivated by the plot, the haikus that Koo the panda speaks in, and illustrations, that they will not realize the important lessons they are learning. We should all be kind to everyone, regardless of what we first think of them!",
+	"Access": "This book can be ordered online.",
+	"Url": "images/63-zenties.png",
+	"id": 63
+},
+{
+	"ISBN": "9780861716258",
+	"Name": "The Banyan Deer A Parable of Courage and Compassion", 
+	"Author": ["Rafe Martin"],
+	"Tags": ["compassion and loving kindness", "Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "wisdom", "Age 6-8"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 46,
+	"Illustrator": ["Richard Wehrman"],
+	"Publisher": "Wisdom Publications", 
+	"Edition": "(2010)",
+	"Notes": "This retelling of a traditional Buddhist “Nigrodhamiga-jataka”, a story of one of the Buddha’s past lives, will captivate children and adults alike with its simple truth and beautiful prose. Let’s learn to treat animals with compassion like the banyan deer!",
+	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1470 .N5522.",
+	"Url": "images/64-banyandeer.png",
+	"id": 64
+},
+{
+	"ISBN": "0898002249",
+	"Name": "A Treasury of Wise Action", 
+	"Author": ["Dharma Publishing"],
+	"Tags": ["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Age 9-12"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 153,
+	"Illustrator": ["Rosalyn White"],
+	"Publisher": "Dharma Publishing", 
+	"Edition": "(1993)",
+	"Notes": "Jataka tales hold great wisdom and can inspire positive action, but most modern retellings are aimed towards young children. This anthology of Jataka Tales was designed specifically for older children, so they too can reap the benefits of these wonderful stories. Let’s all be inspired to undertake good deeds! The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.",
+	"Access": "This book can be ordered online.",
+	"Url": "images/65-treasuryofwiseaction.png",
+	"id": 65
+},
+{
+	"ISBN": "9780898006032",
+	"Name": "The Power of a Promise", 
+	"Author": ["Dharma Publishing"],
+	"Tags":["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "compassion and loving kindness", "wisdom", "Age 6-8", "Age 9-12"],
+	"Language": ["English"],
+	"CoverType": "Paperback",
+	"Pages": 36,
+	"Illustrator": ["Rosalyn White"],
+	"Publisher": "Dharma Publishing", 
+	"Edition": "second edition (2010)",
+	"Notes": "This Jataka tale shows how truth, wisdom, and courage can overcome anger. How can we deal with anger in our own lives? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
+	"Access": "This book can be ordered online.",
+	"Url": "images/66-powerofapromise.png",
+	"id": 66
+},
+{
+	"ISBN": "9780898004281",
+	"Name": "The Jewel of Friendship", 
+	"Author": ["Dharma Publishing"],
+	"Tags":["Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Age 2-5", "Age 6-8"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 32,
+	"Illustrator": ["Magdalena Duran"],
+	"Publisher": "Dharma Publishing",
+	"Edition": "second edition (2009)",
+	"Notes": "A boy learns the true value of friendship after a fallout with his friend over greed. Who are your true friends? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche. Recent editions are accompanied with lesson suggestions for parents and teachers in the back.",
+	"Access": "This book can be ordered online.",
+	"Url": "images/67-jeweloffriendship.png",
+	"id": 67
+},
+{
+	"ISBN": "0892817844",
+	"Name": "Buddhist Masters of Enchantment, the lives and legends of the Mahasiddhas", 
+	"Author": ["Keith Dowman"],
+	"Tags": ["great masters", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback",
+	"Pages": 205,
+	"Illustrator": ["Robert Beer, color plate for each of the Siddhas"],
+	"Publisher": "Inner Traditions", 
+	"Edition": "second edition (1998)",
+	"Notes": "This is an accessible book of stories and pictures. It seems to be aimed at a broader demographic than Dowman’s “Masters of Mahamudra, Songs and Histories of the Eighty-Four Buddhist Siddhas”. In this book each Siddha has a chapter and color plate illustration and their story is told. The book has an extensive introduction with includes: the Siddha Tradition; Defining Our Terms; A Look at Tantras; Thought and Paradox; Skillful Means and Perfect Insight; Pure Pleasure; The Guru; The Cremation Ground; Initiation and Instruction; Alchemy and Meditation: Creative Meditation; Fulfillment Meditatioin; Achieving Mahamudra; Traps of Delusion; Karma; The Holy Madman; The Paradise of the Dakinis; and, The Legacy of Tantra. Each section of the introduction is substantial and sophisticated and runs about a page in length. This book does not have and index, notes, bibliography or glossary.",
+	"Access": "It can be ordered online and is also available in the TKL library, call number BQ342 .A2313.",
+	"Url": "images/68-buddhistmasters.png",
+	"id": 68
+},
+{
+	"ISBN": "9780898000450",
+	"Name": "Tashi and Norbu", 
+	"Author": ["Pema Gellek"],
+	"Tags": ["compassion and loving kindness", "Age 2-5", "Age 6-8"],
+	"Language": ["English"],
+	"CoverType": "Paperback",
+	"Pages": 52,
+	"Illustrator": ["Eva Van Dam"],
+	"Publisher": "Dharma Publishing", 
+	"Edition": "(2014)",
+	"Notes": "Tashi learns the true meaning of friendship and value of all life, when he embarks on a journey to save his best friend Norbu, the yak. What can we do to help the animals we love? The publishing company and writing group behind this book was founded by Tibetan Nyingma Buddhist Lama Tarthang Tulku Rinpoche.",
+	"Access": "This book can be ordered online.",
+	"Url": "images/69-tashiandnorbu.png",
+	"id": 69
+},
+{
+	"ISBN": "0877733775",
+	"Name": "The Life of Marpa the Translator",
+	"Author": ["Tsang Nyon Heruka", "Translated from the Tibetan by the Nalanda Translation Committee under the direction of Chogyam Trungpa"],
+	"Tags": ["great masters", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback",
+	"Pages": 267,
+	"Illustrator": ["- (reproductions of portions of thangkas)"],
+	"Publisher": "Shambala Publications",
+	"Edition": "first edition (1982)",
+	"Notes": "A biography of the Tantric master credited with establishing the Kagyu lineage. The book chronicles Marpa's three trips from Tibet to India to recover traditions and teachings which had been suppressed in Tibet by a nasty king. Marpa was not a monk, but a “householder, farmer, husband, and father. He ate good food, drank lots of barley beer, and lost his temper with his wife and children… Marpa did not try to become a special or different kind of person, but simply used his ordinariness as a path, and as such it became the expression of the ground and and fruition of his realization of mahamudra.” (from the book’s introduction). The book includes the story of his journey as a youth. It contains an extensive glossary, index, and helpful table of contents.",
+	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ767 .M37.",
+	"Url": "images/70-lifeofmarpa.png",
+	"id": 70
+},
+{
+	"ISBN": "0887061583 / 0887061605",
+	"Name": "Masters of Mahamudra, Songs and Histories of the Eighty-Four Buddhist Siddhas", 
+	"Author": ["Keith Dowman"],
+	"Tags": ["great masters", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback", 
+	"Pages": 454,
+	"Illustrator": ["Hugh R. Downs"],
+	"Publisher": "State University of New York", 
+	"Edition": "(1985)",
+	"Notes": "This is quite a scholarly work. Each of the eighty-four have their own chapter. Each chapter has: two or three lines of the particular siddha’s “song of realization”;  the legend of the master which includes their meditation instruction; a section, “sadhana” explicating the meditation in the story; and a historiography. The introduction gives extensive historical, cultural, and philosophical context.  The stories of the Eighty-Four Buddhist Siddhas were translated into Tibetan in the 8th-12th centuries.",
+	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ342 .A313.",
+	"Url": "images/71-mastersofmahamudra.png",
+	"id": 71
+},
+{
+	"ISBN": "-",
+	"Name": "Buddhism For Young Students", 
+	"Author": ["Ven. C. Phangcham, Ph.D."],
+	"Tags": ["life of the Buddha", "Buddhist holy days", "Buddha's teachings aka Four Noble Truths, Eightfold Path, interdependent origination, five aggregates, etc.", "Buddha's previous lives aka Jataka tales", "Age 9-12", "Age 13+"],
+	"Language": ["English"],
+	"CoverType": "Paperback",
+	"Pages": 104,
+	"Illustrator": ["-"],
+	"Publisher": "The Council of Thai Bhikkhus in the U.S.A.", 
+	"Edition": "fifth edition (2002)",
+	"Notes": "Developed by a master in the Theravada tradition, this well-known book is part of the beginner’s curriculum. Its subject addresses Buddhism’s history, special days, approach to social issues along with applications for daily life, and a few of the famous Jataka Tales. It consists of 30 short lessons divided into 3 parts. The language is friendly, and each lesson presents objectives along with expected results.",
+	"Access": "This book is available from CTB in the USA, 110 Rustic Rd. Centereach, NY 11720 USA.",
+	"Url": "images/72-buddhismforyoung.jpg",
+	"id": 72
+},
+{
+	"ISBN": "9789575983550",
+	"Name": ["Masters’ Key-Words D: A Way with Words"], 
+	"Author": ["郑栗儿", "Translator: 刘嘉路"],
+	"Tags": ["karma, virtues and non-virtues", "great masters", "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 111,
+	"Illustrator": ["苏力卡"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2006)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled A Way with Words, Painting or Praying, Help! My Mom is a Hungry Ghost!, A Strange Encounter Abroad the Mushroom Boat, and No Dust on the Mirror. The themes of determination, discipline, duty, and diligence unfold within the biographical stories of five historical characters; Dharmaraksa, Hongyi, Maudgalyayana, Dogen, and Shenxiu. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories. This book can be ordered online.",
+	"Access": "",
+	"Url": "images/73-D.png",
+	"id": 73
+},
+{
+	"ISBN": "9789575983642",
+	"Name": "Masters' Key-Words F: Wearing the Buddha's Robe",
+	"Author": ["郑栗儿", "Translator: 刘嘉路"],
+	"Tags": ["karma, virtues and non-virtues", "wisdom", "great masters", "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 119,
+	"Illustrator": ["高莺雪"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2006)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled Wearing the Buddha’s Robe, Where the Dust Never Settled, A Relentless Devotion to Reform, Among the Silent Bodhisattvas, and The Optimist. The themes of patience, kindness, determination, wisdom and optimism unfold within the biographical stories of five historical characters; Kasyapa, Huineng, Taixu, Daosheng and Hanshan. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories. This book can be ordered online.",
+	"Access": "",
+	"Url": "images/74-F.png",
+	"id": 74
+},
+{
+	"ISBN": "9789575983697",
+	"Name": "Masters' Key-Words G: The Purest Heart in The World",
+	"Author": ["郑栗儿", "Translator: 刘嘉路"],
+	"Tags": ["karma, virtues and non-virtues", "wisdom", "compassion and loving kindness", "family relationships", "great masters", "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 119,
+	"Illustrator": ["简汉平"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2006)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled The Purest Heart in the World, From War Comes Peace, The Unburnable Truth, Seeing the Best in Others, and A New Calling. The themes of unselfishness, the consequences of power, bravery, compassion, and loyalty unfold within the biographical stories of five historical characters; Anathapindika, Subhakarasimha, Zhu Shixing, Zhiqian, and Kuiji. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories. This book can be ordered online.",
+	"Access": "",
+	"Url": "images/75-G.png",
+	"id": 75
+},
+{
+	"ISBN": "9789575983703",
+	"Name": "Masters’ Key-Words H: Who’s Brat Is That?",
+	"Author": ["郑栗儿", "Translator: 刘嘉路"],
+	"Tags": ["karma, virtues and non-virtues", "wisdom", "great masters", "compassion and loving kindness",  "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 119,
+	"Illustrator": ["菊子"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2006)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled Who’s Brat is That?, The Master and The Fly, The Doctor Is In, Under the Bridge, and Always Looks on the Bright Side of Life. Themes of humility, hopefulness, humor, honesty, and healing unfold within the biographical stories of five historical characters; Rahula, Guling, Jivaka, Daito and Lancan. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories. This book can be ordered online.",
+	"Access": "",
+	"Url": "images/76-H.png",
+	"id": 76
+},
+{
+	"ISBN": "9789575983741",
+	"Name": "Masters’ Key-Words I: A Battle Of Wits",
+	"Author": ["郑栗儿", "译者:刘嘉路"],
+	"Tags": ["great masters", "karma, virtues and non-virtues", "wisdom", "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 127,
+	"Illustrator": ["周瑞萍(Rae)"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2007)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled A Battle of Wits, Two Offbeat Buddhists, Standing Up for Buddhism, The Prophet in The Tree, and Creative Counseling. The themes of intelligence, innocence, and perseverance unfold within the biographical stories of five historical characters; Foyin, Hanshan and Shide, Dharmapala, Daolin, and Katyayana. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories.  This book can be ordered online.",
+	"Access": "",
+	"Url": "images/77-I.png",
+	"id": 77
+},
+{
+	"ISBN": "9789575983758",
+	"Name": "Masters’ Key-Words J: A Cloth Bag Of Miracles", 
+	"Author": ["郑栗儿", "译者:刘嘉路"],
+	"Tags": ["great masters", "karma, virtues and non-virtues", "wisdom", "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 127,
+	"Illustrator": ["萧湄羲"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2007)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled A Cloth Bag of Miracles, What You Can Achieve Without a Sword, The General’s Master, Becoming a Team Player, and Seeking for the True Joy. The themes of joyfulness, justice, humility, and teamwork unfold within the biographical stories of four historical characters; Zibo, Phagspa, Buddhayasa, and Huairang. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories.  This book can be ordered online.",
+	"Access": "",
+	"Url": "images/78-J.png",
+	"id": 78
+},
+{
+	"ISBN": "9789575983840",
+	"Name": "Masters’ Key-Words K: New Life, Old Friend",
+	"Author": ["郑栗儿", "译者:刘嘉路"],
+	"Tags": ["great masters", "compassion and loving kindness", "wisdom", "karma, virtues and non-virtues",  "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 119,
+	"Illustrator": ["张志傑"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2007)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled Astromonk!, A True Friend to All, New Life Old Friend, The Restless Monk, and The Esoteric Master. The themes of kindness, knowledge, and karma unfold within the biographical stories of five historical characters; Yixing, Srimitra, An Shigao, Jizang, and Padmasambhava. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories. This book can be ordered online.",
+	"Access": "",
+	"Url": "images/79-K.png",
+	"dd": 79
+},
+{
+	"ISBN": "9789575983857",
+	"Name": "Masters’ Key-Words A Thief In The Night (L)",
+	"Author": ["郑栗儿", "译者:刘嘉路"],
+	"Tags": ["great masters", "compassion and loving kindness", "karma, virtues and non-virtues", "Age 9-12", "Age 13+"],
+	"Language": ["Chinese", "English"],
+	"CoverType": "Paperback",
+	"Pages": 127,
+	"Illustrator": ["菊子"],
+	"Publisher": "法鼓文化事业股份有限公司",
+	"Edition": "(2007)",
+	"Notes": "This book (part of a 26-book set) is a compilation of five stories titled True Freedom, Doing What It Takes, The General and the Project, The One-Eyed Wonder, and A Thief in the Night. The themes of non-attachment, commitment, forgiveness, kindness and fate unfold within the biographical stories of five historical characters; Pang Yun, Purna, Fotucheng, Aryadeva and Yungu. Geared towards English language learners (with Chinese as the mother tongue), the stories are in both Chinese and English, and contains a “Word List” containing difficult vocabulary words found within the stories. This book can be ordered online.",
+	"Access": "",
+	"Url": "images/80-L.png",
+	"Id": 80
 }]
 }

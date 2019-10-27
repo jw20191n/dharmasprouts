@@ -12,8 +12,8 @@
   <title>Dharma Sprouts</title>
 </head>
 
-<body class="home">
-<!-- <body class="home" onclick="print_all_tags()"> -->
+<body class="home" onload="printTags()" >
+
   <header>
     <div id="logo">
       <a href="index.html"><img src="images/newlogo.jpeg" alt="Logo"></a>
@@ -48,9 +48,52 @@
         <h6>Set preferences to see our top age-appropriate picks.</h6>
       </div>
       <div id="right">
-        <button id="yellow_button" type="button">Get age appropriate picks!</button>
+        <button id="yellow_button" type="button" data-toggle="modal" data-target="#firstModal">Get age appropriate picks!</button>
       </div>
     </div>
+
+    <!--------------         Modal             ---------->
+
+    <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+          <button id="minus">-</button>
+            <span id="ageNumber"></span>
+          <button id="add">+</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
+            <button type="button" class="btn btn-primary" id="nextModal" >Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECOND MODAL -->
+    <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title" id="pickFilterLabel">Modal title</h5> -->
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button> -->
+            </div>
+            <div class="modal-body">
+              <form action="" id="tagsCheckbox" method="POST">
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">Close</button>
+              <a href="" id="toTagPage" >
+                <button type="button" class="btn btn-primary" id="submitModalInfo" >Submit</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div id="content_pic_container">
       <img src="images/home.jpg" alt="book covers">
@@ -67,35 +110,37 @@
       <div id="right-side">
         <div id="top-line">
             <p>Browse By Topic</p>
-        </div>
-
-        <div id="search-container-2">
-            <form action="">
-              <input type="text" placeholder="Search for a topic" name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            <div id="search-container-2">
+                <form action="" id="tag-filter">
+                  <input type="text" placeholder="Search for a topic" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
 
         <div id="tags">
+          <!-- <button onclick="print_all_tags()">print book names in console</button> -->
           <ul id="display-tags">
+
           </ul>
-          
         </div>
+       <!-- end of #tags -->
 
       </div>
+      <!-- end of #right-side -->
 
     </div>
   </div>
-
+  <footer>This website is lunched by Tsechen Kunchab Ling under a grant from the Sachen Foundation.</footer>
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="db.json></script>
 </body>
 
 
