@@ -3,6 +3,7 @@ const addbtn = document.getElementById('add');
 const minusbtn = document.getElementById('minus');
 const nextbtn = document.getElementById('nextModal');
 const form = document.getElementById('tagsCheckbox');
+
 let tags = {};
 //object that keys are the name of the tags, values are the numbers of the tags appeared
 let selected = [];// used to save checked tags in filter
@@ -143,4 +144,41 @@ document.getElementById('submitModalInfo').addEventListener('click', ()=>{
         document.getElementById('toTagPage').setAttribute('href', `${newUrl}`)
     }
     // $('.modal').modal('hide');
+})
+
+//  ===================         Language choice       ====================
+
+document.getElementById('chn').addEventListener('click', ()=>{
+    document.getElementById('searchInfo').search.placeholder = "请输入搜索内容";
+    let ul = document.querySelector('.navLink');
+    console.log(ul.childNodes);
+    for(let i=0; i<ul.childNodes.length; i++){
+        if(i === 1){
+            // console.log(ul.childNodes[i].childNodes[0].innerText);
+            ul.childNodes[i].childNodes[0].innerText = "2-5岁";
+        }else if(i === 3){
+            // console.log(ul.childNodes[i].childNodes[0].innerText);
+            ul.childNodes[i].childNodes[0].innerText = "6-8岁";
+        }else if(i === 5) {
+            // console.log(ul.childNodes[i].childNodes[0].innerText);
+            ul.childNodes[i].childNodes[0].innerText = "9-12岁";
+        }else if(i === 7){
+            // console.log(ul.childNodes[i].childNodes[0].innerText);
+            ul.childNodes[i].childNodes[0].innerText = "13岁以上";
+        }
+        // switch(i){
+        //     case 0: 
+        //         ul.childNodes[0].innerText = "2-5岁";
+        //         break;
+        //     case 1:
+        //         ul.childNodes[1].innerText = "6-8岁";
+        //         break;
+        //     case 2: 
+        //         ul.childNodes[2].innerText = "9-12岁";
+        //         break;
+        //     case 3: 
+        //     ul.childNodes[3].innerText = "13岁以上";
+        //     break;
+        // }
+    }
 })
