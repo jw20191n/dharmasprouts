@@ -140,7 +140,6 @@ document.getElementById('submitModalInfo').addEventListener('click', ()=>{
     if (selected.length>0){
         let tagString = selected.join('&&');
         let newUrl =   'show_tags.html?val=' + tagString;
-        // console.log(newUrl);
         document.getElementById('toTagPage').setAttribute('href', `${newUrl}`)
     }
     // $('.modal').modal('hide');
@@ -149,36 +148,36 @@ document.getElementById('submitModalInfo').addEventListener('click', ()=>{
 //  ===================         Language choice       ====================
 
 document.getElementById('chn').addEventListener('click', ()=>{
+    //search
     document.getElementById('searchInfo').search.placeholder = "请输入搜索内容";
+
+    //nav
     let ul = document.querySelector('.navLink');
-    console.log(ul.childNodes);
+    // console.log(ul.childNodes);
     for(let i=0; i<ul.childNodes.length; i++){
-        if(i === 1){
-            // console.log(ul.childNodes[i].childNodes[0].innerText);
-            ul.childNodes[i].childNodes[0].innerText = "2-5岁";
-        }else if(i === 3){
-            // console.log(ul.childNodes[i].childNodes[0].innerText);
-            ul.childNodes[i].childNodes[0].innerText = "6-8岁";
-        }else if(i === 5) {
-            // console.log(ul.childNodes[i].childNodes[0].innerText);
-            ul.childNodes[i].childNodes[0].innerText = "9-12岁";
-        }else if(i === 7){
-            // console.log(ul.childNodes[i].childNodes[0].innerText);
+        switch(i){
+            case 1: 
+                ul.childNodes[i].childNodes[0].innerText = "2-5岁";
+                break;
+            case 3:
+                ul.childNodes[i].childNodes[0].innerText = "6-8岁";
+                break;
+            case 5: 
+                ul.childNodes[i].childNodes[0].innerText = "9-12岁";
+                break;
+            case 7: 
             ul.childNodes[i].childNodes[0].innerText = "13岁以上";
+            break;
         }
-        // switch(i){
-        //     case 0: 
-        //         ul.childNodes[0].innerText = "2-5岁";
-        //         break;
-        //     case 1:
-        //         ul.childNodes[1].innerText = "6-8岁";
-        //         break;
-        //     case 2: 
-        //         ul.childNodes[2].innerText = "9-12岁";
-        //         break;
-        //     case 3: 
-        //     ul.childNodes[3].innerText = "13岁以上";
-        //     break;
-        // }
     }
+
+    //personalized_bar left and right
+    let left = document.getElementById('left');
+    left.innerHTML = "<h5>想寻找适合儿童、青少年阅读浏览的佛教内容吗?</h5><h6>点击右边按钮，查看为您的需求量身定制的个性化推荐</h6>";
+    document.getElementById('yellow_button').innerText = "点击获得个性化推荐";
+
+    //intro
+    document.getElementById('left-side').innerHTML = "<p>我们的网站收录了适合儿童及青少年的中英文佛教出版物。家长及佛教中心等教育者可以通过年龄、感兴趣主题获得量身定制的个性化推荐，从而寻找到最适合小读者的佛教书籍、视频或者音乐</p>"
+  
+    
 })
