@@ -41,9 +41,8 @@ function displayDivs(){
                 bookDiv.innerHTML = `<img src="${book.Url}" class="covers">
                     <h3>${book.Name}</h3>
                     <p>Author: ${book.Author.join(" ")}</p>
-                    <p>Publisher: ${book.Publisher}</p>
-                    <p>Language: ${book.Language.join(" ")}</p>
-                    <p>Description: ${book.Notes} <br> ${book.Access}</p>
+                    <p>Publisher: ${book.Publisher} </p>
+                    <p>Edition: ${book.Edition} </p>
                     `
                 let newP = document.createElement('p');
                 newP.innerHTML = "Tags: ";
@@ -58,6 +57,17 @@ function displayDivs(){
                     
                 })
                 bookDiv.appendChild(newP);
+                bookDiv.innerHTML += `
+                    <div class="bookContent hideContent">
+                        <p>Language: ${book.Language.join(" ")}</p>
+                        <p>Cover Type: ${book.CoverType}</p>
+                        <p>Pages: ${book.Pages}</p>
+                        <p>Illustrator: ${book.Illustrator.join(" ")}</p>
+                        <p>Description: ${book.Notes} <br> ${book.Access}</p>
+                    </div>
+                    <div class="show-more" onclick="showmore()">
+                        <a href="#">... show more</a>
+                    </div>`;
                 displayDiv.appendChild(bookDiv);
             })
        
@@ -65,3 +75,20 @@ function displayDivs(){
 
 }//end of displayDivs
 
+
+function showmore(){
+    let linkText = event.target.innerText;
+    console.log(linkText);
+    let targetDiv = event.target.parentNode.previousElementSibling;
+
+    if(linkText === '... show more'){
+        targetDiv.classList.remove('hideContent');
+        targetDiv.classList.add('showContent');
+        event.target.innerText = '... show less';
+    }else if (linkText === '... show less'){
+        targetDiv.classList.remove('showContent');
+        targetDiv.classList.add('hideContent');
+        event.target.innerText = '... show more';
+    }
+
+}

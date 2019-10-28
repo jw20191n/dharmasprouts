@@ -203,9 +203,10 @@ div #inner{
 
 div .addedDiv {
     width: 90%;
-    margin:auto;
+    margin:0 auto;
     color: #4C5B5C;
     margin-bottom: 37px;
+    line-height: ;
 }
 
 .addedDiv img.covers{
@@ -223,4 +224,21 @@ footer{
     padding:20px;
     background-color: #c1d4e0;
 
+}
+
+/* show more function */
+.hideContent {
+    overflow: hidden;
+    line-height: 1em;
+    height: 2em;
+}
+
+.showContent {
+    line-height: 1.2em;
+    height:auto;
+}
+
+.show-more span{
+    color: blue;
+    
 }
