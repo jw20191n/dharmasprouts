@@ -37,6 +37,7 @@ function displayDivs(){
             booksWithTag.forEach( book => {
                 let bookDiv = document.createElement('div');
                 bookDiv.classList.add('addedDiv');
+                bookDiv.setAttribute('id', `${book.id}`)
                 // console.log(book.Url);
                 bookDiv.innerHTML = `<img src="${book.Url}" class="covers">
                     <h3>${book.Name}</h3>
@@ -66,7 +67,7 @@ function displayDivs(){
                         <p>Description: ${book.Notes} <br> ${book.Access}</p>
                     </div>
                     <div class="show-more" onclick="showmore()">
-                        <a href="#">... show more</a>
+                        <a href="#${book.id}">... show more</a>
                     </div>`;
                 displayDiv.appendChild(bookDiv);
             })
@@ -78,8 +79,8 @@ function displayDivs(){
 
 function showmore(){
     let linkText = event.target.innerText;
-    console.log(linkText);
     let targetDiv = event.target.parentNode.previousElementSibling;
+ 
 
     if(linkText === '... show more'){
         targetDiv.classList.remove('hideContent');
