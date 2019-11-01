@@ -12,7 +12,7 @@
   <title>Dharma Sprouts</title>
 </head>
 
-<body class="home" onload="printTags()" >
+<body class="home" onload="printTags('db.json')" >
 
   <header>
     <div id="logo">
@@ -109,7 +109,7 @@
 
       <div id="right-side">
         <div id="top-line">
-            <p>Browse By Topic</p>
+            <p id="search2-label">Browse By Topic</p>
             <div id="search-container-2">
                 <form action="" id="tag-filter">
                   <input type="text" placeholder="Search for a topic" name="search">
@@ -119,7 +119,6 @@
         </div>
 
         <div id="tags">
-          <!-- <button onclick="print_all_tags()">print book names in console</button> -->
           <ul id="display-tags">
 
           </ul>

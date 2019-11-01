@@ -175,15 +175,32 @@ div#right {
 }
 
 
-ul#display-tags a {
+.tagsLink {
 	text-decoration:none;
 	color: inherit;
 }
 
-ul#display-tags a:hover {
+.tagsLink :hover{
 	text-decoration:none;
 	color: #007bff;
 }
+
+ul#display-tags {
+    list-style-type: none;
+    margin-left:-20px;
+}
+
+.tagMore{
+    height: auto;
+}
+
+.tagLess{
+    overflow: hidden;
+    height: 12em;
+}
+
+
+
 /* ===================            show_tags.html              ========================*/
 
 div #outter_display_area {
@@ -246,4 +263,11 @@ footer{
 
 .show-more span{
     color: #007bff;
+}
+
+
+/* ---------------------------        chn.html      -------------------------*/
+#chn-info {
+    background: #8EB1C7;
+    padding: 20px;
 }
