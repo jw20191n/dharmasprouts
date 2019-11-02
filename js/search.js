@@ -3,15 +3,11 @@ const displayDiv = document.getElementById('inner');
 let booksWithTag =[];//array that store all the books that has the searched tag
 
 let url = window.location.toString();
-let bookTag = url.replace(/^.*?\=/,'');
-let newBookTag = bookTag.split('%20').join(' ');
-newBookTag = newBookTag.replace('%27', "'");
+let searchTerm = url.replace(/^.*?\=/,'');
+let cleanTerm = searchTerm.split('%20').join(' ');
+cleanTerm = cleanTerm.replace('%27', "'");
 let newBookTags = [];
-
-if (newBookTag.includes('&&')){
-    newBookTags = newBookTag.split('&&');
-    console.log(newBookTags);
-}
+console.log(cleanTerm)
 
 function displayDivs(){
     $.getJSON( "db.json", function( json ) {

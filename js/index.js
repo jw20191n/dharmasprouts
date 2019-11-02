@@ -1,16 +1,23 @@
+//for modal
 const ageSpan = document.getElementById('ageNumber');
 const addbtn = document.getElementById('add');
 const minusbtn = document.getElementById('minus');
 const nextbtn = document.getElementById('nextModal');
 const form = document.getElementById('tagsCheckbox');
 
-let tags = {};
-//object that keys are the name of the tags, values are the numbers of the tags appeared
-let selected = [];// used to save checked tags in filter
+//language choice initialized as false; toggle to true when user click on 'chn' button
+let chn = false;
+const firstModal = document.getElementById('firstModal');
+const secondModal = document.getElementById('secondModal');
+
+//for page renders
+let tags = {}; //object keys are the name of the tags, values are the numbers of the tags appeared
 const ulDisplay = document.getElementById('display-tags');
 
 
+//====================         print tags when page first renders     ===========================
 function printTags(file){
+    chn = false;
     $.getJSON(file, function( json ) {
         // console.log(json.data);
         json.data.forEach( book => {
@@ -37,15 +44,13 @@ function printTags(file){
         <span>... view full list<span>
         </div>`
     });//end of getJson
-
-
 }
 
+//=======================    click on "show more" button to see more content       ==============
 function showmore() {
     let linkText = event.target.innerText;
     let targetDiv = event.target.parentNode.previousElementSibling;
-    console.log(targetDiv)
- 
+    // console.log(targetDiv)
 
     if(linkText === '... view full list'){
         targetDiv.classList.remove('tagLess');
@@ -98,14 +103,12 @@ document.getElementById('close').addEventListener('click', ()=>{
 $('#secondModal').on('show.bs.modal', function (e) {
     form.innerHTML = '';
     for (keys in tags) {
-        form.innerHTML += `
-                            <input type="checkbox" name="${keys}" value="${keys}" class="checkboxes">${keys}<br>
-                        `;
+        form.innerHTML += `<input type="checkbox" name="${keys}" value="${keys}" class="checkboxes">${keys}<br>`;
     }
   });
 
 document.getElementById('submitModalInfo').addEventListener('click', ()=>{
-    selected = [];
+    let selected = [];
     let inputs = document.getElementsByClassName('checkboxes');
 
     for (let i=0; i<inputs.length; i++){
@@ -138,6 +141,7 @@ document.getElementById('submitModalInfo').addEventListener('click', ()=>{
 //  ===================         Language choice       ====================
 
 document.getElementById('chn').addEventListener('click', ()=>{
+    chn = true;
     changeToChinses();
 })
 
@@ -147,7 +151,7 @@ function changeToChinses() {
 
     //nav
     let ul = document.querySelector('.navLink');
-    // console.log(ul.childNodes);
+
     for(let i=0; i<ul.childNodes.length; i++){
         switch(i){
             case 1: 
@@ -160,8 +164,10 @@ function changeToChinses() {
                 ul.childNodes[i].childNodes[0].innerText = "9-12岁";
                 break;
             case 7: 
-            ul.childNodes[i].childNodes[0].innerText = "13岁以上";
-            break;
+                ul.childNodes[i].childNodes[0].innerText = "13岁以上";
+                break;
+            case 9:
+                ul.childNodes[i].childNodes[0].innerText = "教师用材料"
         }
     }
 
@@ -179,6 +185,10 @@ function changeToChinses() {
     tags = {};
     ulDisplay.innerHTML = '';
     printChnTags('new-chn.json');
+
+    //modals
+    firstModal.innerHTML = '';
+    secondModal.innerHTML = '';
 }
 
 
@@ -215,8 +225,44 @@ function printChnTags(file){
         </div>`
 
     });//end of getJson
-
-
 }
 
-//=============================== Search Bar ==================================
+
+document.getElementById('yellow_button').addEventListener('click', ()=>{
+    console.log(chn)
+    if(chn === true){
+        firstModal.innerHTML = `
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <span>很抱歉，目前本功能只限于英语材料。请您切换到英文页面进行选择。</span>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModal">Close</button>
+            </div>
+            </div>   
+        `;
+    }
+})
+//===============================     filter by topic    ==================================
+document.getElementById('tag-filter').addEventListener('input', ()=>{
+    let input = event.target.value;
+    // console.log(input);
+    const children = document.getElementById('tag-div').childNodes
+    for(let i=0; i< children.length; i++){
+        if (!children[i].innerText.toLowerCase().includes(input.toLowerCase())){
+            children[i].setAttribute('style', 'display:none')
+        }else{
+            children[i].setAttribute('style', 'display:inline')
+        }
+    }
+})
+
+
+
+// ===============================            search             =============================
+document.getElementById('searchInfo').addEventListener('submit', (event)=>{
+    // event.preventDefault();
+    let input = event.target.search.value;
+    console.log(input);
+})

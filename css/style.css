@@ -1,3 +1,5 @@
+
+
 .home {
     display: flex;
     flex-direction: column;
@@ -95,11 +97,15 @@ nav a {
 }
 
 nav ul li {
-    width: 250px;
+    width: 200px;
 	display:inline-block;
 	padding: 20px; 
 	font-size: 16px;
 	opacity: 1;
+}
+
+#teacher{
+    color: #FDE47C;
 }
 
 /* ***************************   CONTENT   ************************** */
