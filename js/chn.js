@@ -37,7 +37,7 @@ function displayDivs(){
                     <p>简介: ${book.Notes} <br> ${book.Access}</p>
                 </div> 
                 <div class="show-more" onclick="showmore()">
-                    <a href="#${book.id}">... 更多</a>
+                    <a class="btn" type="button"  href="#${book.id}">... 更多</a>
                 </div>`
             displayDiv.appendChild(bookDiv);
         })

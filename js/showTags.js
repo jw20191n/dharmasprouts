@@ -70,7 +70,7 @@ function displayDivs(){
                         <p>Description: ${book.Notes} <br> ${book.Access}</p>
                     </div>
                     <div class="show-more" onclick="showmore()">
-                        <a href="#${book.id}">... show more</a>
+                        <a class="btn " type="button" href="#${book.id}">... show more</a>
                     </div>`;
                 displayDiv.appendChild(bookDiv);
             })
@@ -111,6 +111,7 @@ function scrollFunction() {
         topBtn.style.display = "none";
     }
 }
+
 
 function topFunction() {
   document.body.scrollTop = 0;

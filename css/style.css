@@ -298,7 +298,15 @@ ul#display-tags {
     border:none;
 }
 
+/*      ==================         FOOTER       =================            */
+footer{
+    text-align: center;
+    font-size: 12px;
+    /* margin-top: 20px; */
+    padding:20px;
+    background-color: #c1d4e0;
 
+}
 
 /* ===================            show_tags.html              ========================*/
 
@@ -337,6 +345,10 @@ div .addedDiv {
     box-shadow: 1px 1px 0 1px #fff, 2px 2px 0 1px #424242, 3px 3px 0 1px #fff, 4px 4px 0 1px #424242;
 }
 
+.addedDiv p {
+    margin-bottom: 0.5rem;
+}
+
 .covers-div{
     float:left;
     width: 270px;
@@ -369,21 +381,11 @@ a.redLink{
 
  
 
-/*      ==================         FOOTER       =================            */
-footer{
-    text-align: center;
-    font-size: 12px;
-    /* margin-top: 20px; */
-    padding:20px;
-    background-color: #c1d4e0;
-
-}
-
-/*   =================          show more function       =====================*/
+/*  ---------    show_tags.html   show more function   ----------*/
 .hideContent {
     overflow: hidden;
     line-height: 1em;
-    height: 2em;
+    height: 0em;
 }
 
 .showContent {
@@ -487,9 +489,15 @@ header{
 
 .hamburger{
     display: block;
-    margin-top:50px;
+    /* margin-top:50px; */
+    /* margin-left:3%; */
+    width:20%
+}
+
+#dropdownMenuButton{
+    margin-top:50px; 
     margin-left:3%;
-    width:15%
+    color: #F5853F;
 }
 
 div#header-left {
@@ -507,7 +515,7 @@ div#header-left img {
 
 div#header-right {
     display: inline-block;
-    width: 25%;
+    width: 20%;
 }
 
 div#header-right-inner{
@@ -542,7 +550,7 @@ div#left {
     margin-left: 0px;
     padding-left:5%;
     padding-right:5%;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 div#left h4{
@@ -555,7 +563,7 @@ div#left h6{
 
 div#right {
     width: 100%;
-    margin: 3% 5% 2% 5%;
+    margin: 3% 5% 3% 5%;
     text-align: left;
 }
 
@@ -597,8 +605,9 @@ div#left-side p{
 }
 
 #tags{
-    padding-left: 5%;
-    padding-right:5%;
+    padding: 10px 5% 10px 5%;
+    /* padding-left: 5%;
+    padding-right:5%; */
 }
 
 #search-container-2{
@@ -633,7 +642,7 @@ div .addedDiv {
     color: #4C5B5C;
     margin-bottom: 37px;
     line-height: regular;
-    min-height: 240px;
+    min-height: 200px;
 }
 
 .addedDiv h3{

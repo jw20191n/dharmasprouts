@@ -18,6 +18,7 @@ const ulDisplay = document.getElementById('display-tags');
 //====================         print tags when page first renders     ===========================
 function printTags(file){
     chn = false;
+    checkScreen();
     $.getJSON(file, function( json ) {
         // console.log(json.data);
         json.data.forEach( book => {
@@ -44,6 +45,7 @@ function printTags(file){
         <span>... view full list<span>
         </div>`
     });//end of getJson
+
 }
 
 //=======================    click on "show more" button to see more content       ==============
@@ -280,6 +282,10 @@ document.getElementById('searchInfo').addEventListener('submit', (event)=>{
 
 // ===============================            responsive             =============================
 window.addEventListener('resize', ()=>{
+    checkScreen()
+})
+
+function checkScreen(){
     if (window.innerWidth <= 765){
         document.getElementById('chn').innerText = '中';
         document.getElementById('eng').innerText = 'Eng';
@@ -287,4 +293,4 @@ window.addEventListener('resize', ()=>{
         document.getElementById('chn').innerText = '中文';
         document.getElementById('eng').innerText = 'English';
     }
-})
+}
