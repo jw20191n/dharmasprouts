@@ -128,6 +128,10 @@ nav ul li {
     color: #FDE47C;
 }
 
+.hamburger{
+    display: none;
+}
+
 /* ***************************   CONTENT   ************************** */
 
 .content {
@@ -470,11 +474,118 @@ div#right-side{
 }
 }
 
-/* ipad 768 */
-@media only screen and (max-width: 1000px) {
+/*=====================           ipad 768             =============*/
+@media only screen and (max-width: 768px) {
+/* header and nav */
+.show{
+    display: none
+}
+
+header{
+    height: 120px;
+}
+
+.hamburger{
+    display: block;
+    margin-top:50px;
+    margin-left:3%;
+    width:15%
+}
+
+div#header-left {
+    width: 60%;
+}
+
+div#header-left img {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    width:200px;
+    height:auto;
+    text-align: center;
+}
+
+div#header-right {
+    display: inline-block;
+    width: 25%;
+}
+
+div#header-right-inner{
+    margin-top: 50px;
+    padding-right: 5%;
+}
+
+#lang {
+    font-size: 15px;
+    display: inline;
+    padding-left: 0px;
+    text-align: right;
+    margin:auto;
+}
+
+nav{
+    display: none;
+}
+
+/* personalized bar */
+div#personalized_bar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #F5853F;
+    text-align: left;
+    color: white;
+}
+
+div#left {
+    width: 100%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 2%;
+}
+
+div#left h4{
+    font-size:1rem;
+}
+
+div#left h6{
+    font-size:0.8rem;
+}
+
+div#right {
+    width: 100%;
+    margin: 3% 5% 2% 5%;
+    text-align: left;
+}
+
+#yellow_button {
+    height: 35px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+} 
+
+/* content area below picture */
+#intro_tags{
+    flex-direction: column;
+}
+
+#left-side{
+    width:100%;
+    padding-right:5%;
+    /* padding:10px; */
+}
+#right-side{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 5%;
+    font-size: 15px;
+}
 #search-container-2{
     margin-left: 5px;
 }
+
+
 }
 
 /* mobile  */
