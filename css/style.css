@@ -561,7 +561,9 @@ div#left h6{
 
 div#right {
     width: 100%;
-    margin: 3% 5% 3% 5%;
+    margin: 3% 0% 3% 0%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: left;
 }
 
