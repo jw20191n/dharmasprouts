@@ -6,7 +6,6 @@
 }
 
 #yellow_button {
-
     height: 58px;
     width:300px;
     background-color: #FDE47C;
@@ -21,7 +20,7 @@
 } 
 
 /********************     HEADER   ****************** */
-
+/* header left */
 header {
     display: flex;
     flex-direction: row;
@@ -29,43 +28,60 @@ header {
     height: 150px;
 }
 
-
-div#logo {
+div#header-left {
     width: 50%
 }
 
-div#logo img {
-    margin-left: 220px;
+div#header-left img {
+    margin-left: 30%;
     margin-top: 20px;
     width: 321px;
     height:124px;
 }
 
-div#search-container-1 {
+/* header right */
+div#header-right {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-top: 50px;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
 
-div#search-container-1 form{
+div#header-right-inner{
+    margin-top: 50px;
+    padding-left: 180px;
+}
+
+/* search form */
+.formText{
+    border-radius: 24px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    display: inline-block;
     width: 300px;
-    margin-left: 220px;
-    float: right;
+    height: 35px;
+    padding: 8px 40px 7px 15px;
+    margin: 0 0 0 -3px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #535353;
+    border: 1px solid rgba(153,153,153,0.6);
+    outline: none;
 }
 
-div#search-container-1 form input {
-    width:250px;
+/* search icon in search form */
+button.icon-search{
+    margin-left: -50px;
+    border:none;
 }
 
+/* language choice */
 #lang {
-    float: right;
-    margin-left: 410px;
     font-size: 15px;
     display: inline;
+    padding-left: 180px;
+    text-align: right;
 }
 
 #lang span{
@@ -79,29 +95,33 @@ nav {
 }
 
 nav ul{
-    float:left;
-    margin-top:0;
-    margin-bottom: 0;
-    margin-left: 220px;
-    overflow:hidden;
+    /* float:left; */
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    /* overflow:hidden; */
 	color: white;
 	padding: 0;
-	text-align:center;
-	-webkit-transition: max-height 0.4s;
+    /* text-align:center; */
+    height:60px; 
+	-webkit-transition: max-height 0.4s; 
 }
 
 
 nav a {
-	text-decoration:none;
+	text-decoration: none;
 	color: inherit;
 }
 
+nav a:hover {
+    text-decoration: none;
+}
+
 nav ul li {
-    width: 200px;
-	display:inline-block;
+    width:15%;
 	padding: 20px; 
 	font-size: 16px;
-	opacity: 1;
+	opacity: 1; 
 }
 
 #teacher{
@@ -110,12 +130,11 @@ nav ul li {
 
 /* ***************************   CONTENT   ************************** */
 
-
 .content {
     display: flex;
     flex-direction: column;
     width: 1000px;
-    margin-left: 220px;
+    margin: auto;
 }
 
 /* -------------content 1: personilized search bar to open modal -------- */
@@ -140,8 +159,59 @@ div#right {
     margin-right: 5%;
     margin-top: 3%;
 }
+/* -----------------------    content2: modal   --------------------- */
+div.custom-modal{
+    background: #F5853F;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    border: none;
+}
 
-/* -----------------------content2: pic container--------------------- */
+div.second-custom-modal{
+    background: #F5853F;
+    flex-direction: row;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    padding: 50px;
+    border: none;
+}
+
+div.custom-modal span{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+div#number-btn-group{
+    margin: 20px;
+}
+
+div#number-btn-group button{
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: #C93713;
+}
+
+.custom-modal-btn{
+    background: #FDE47C;
+}
+
+.checkboxes{
+    margin: 5px;
+}
+
+input.box-checked{
+    background: whitesmoke;
+    opacity: 20%;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+/* -----------------------content3: pic container--------------------- */
 
 #content_pic_container{
     min-height: 350px;
@@ -150,7 +220,7 @@ div#right {
     text-align: center;
 }
 
-/* --------------------------content3: tag part------------------- */
+/* --------------------------content4: tag part------------------- */
 
 #intro_tags {
     display: flex;
@@ -205,6 +275,25 @@ ul#display-tags {
     height: 12em;
 }
 
+#tag-filter input{
+    border-radius: 24px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    padding: 8px 40px 7px 15px;
+    margin: 0 0 0 -3px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #535353;
+    border: 1px solid rgba(153,153,153,0.6);
+    outline: none;
+}
+
+#tag-filter button{
+    border:none;
+}
+
 
 
 /* ===================            show_tags.html              ========================*/
@@ -212,7 +301,6 @@ ul#display-tags {
 div #outter_display_area {
     background-color:#D8D8D8;
     min-height: 200px;
-    margin-bottom: 0;
 }
 
 div #inner{
@@ -220,6 +308,8 @@ div #inner{
     width: 740px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .prompt {
@@ -232,18 +322,48 @@ div .addedDiv {
     margin:0 auto;
     color: #4C5B5C;
     margin-bottom: 37px;
+    line-height: normal;
+    min-height: 250px;
 }
 
 .addedDiv img.covers{
-    float:left;
-    width: 250px;
-    height: 250px;
-    padding: 10px 15px 10px 0px;
+    position: relative;
+    max-height: 250px;
+    max-width: 250px;
+    box-shadow: 1px 1px 0 1px #fff, 2px 2px 0 1px #424242, 3px 3px 0 1px #fff, 4px 4px 0 1px #424242;
 }
 
+.covers-div{
+    float:left;
+    width: 270px;
+    height: 270px;
+    padding: 10px 15px 10px 0px;
+}
 a.redLink{
     color:red;
 }
+
+/* back to top button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #backToTop:hover {
+    /* color: #F5853F;  */
+    background: #FDE47C;
+  }
+
+ 
 
 /*      ==================         FOOTER       =================            */
 footer{
@@ -277,3 +397,84 @@ footer{
     background: #8EB1C7;
     padding: 20px;
 }
+
+/* ===================================      RESPONSIVE       ========================= */
+@media only screen and (max-width: 1000px) {
+
+div#header-left img {
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 321px;
+    height:124px;
+}    
+
+/* header right */
+div#header-right-inner{
+    margin-top: 50px;
+    padding-left: 0px;
+    text-align: right;
+    margin-right: 5%;
+}
+
+nav ul{
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.content {
+    width: 100vw;
+    margin: auto;
+}
+
+
+#yellow_button {
+    height: 58px;
+    width: auto;
+} 
+
+div#left {
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+div#right {
+    width: 50%;
+    margin-right: 0;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#content_pic_container{
+    min-width: 100%;
+    max-width: 100%;
+    width:100%;
+    min-height: auto;
+    height:auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#content_pic_container img{
+    max-width: 100%;
+    height: auto;
+}
+
+div#left-side p{
+    margin-left:5%;
+}
+
+div#right-side{
+    margin-right:5%;
+}
+}
+
+/* ipad 768 */
+@media only screen and (max-width: 1000px) {
+#search-container-2{
+    margin-left: 5px;
+}
+}
+
+/* mobile  */

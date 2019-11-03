@@ -3,31 +3,33 @@ const displayDiv = document.getElementById('inner');
 let booksWithTag =[];//array that store all the books that has the searched tag
 
 let url = window.location.toString();
-let searchTerm = url.replace(/^.*?\=/,'');
-let cleanTerm = searchTerm.split('%20').join(' ');
-cleanTerm = cleanTerm.replace('%27', "'");
-let newBookTags = [];
-console.log(cleanTerm)
+let bookTag = url.replace(/^.*?\=/,'');
+let cleanTerms = bookTag.split('+');
+// cleanTerm = cleanTerm.replace('%27', "'");
+let cleanTerm = cleanTerms.join(' ');
+ 
+console.log(cleanTerms);
 
-function displayDivs(){
+function displayResult(){
     $.getJSON( "db.json", function( json ) {
 
-        if (newBookTags.length>0){
-            newBookTags.forEach(tag => {
+        if (cleanTerms.length>0){
+            cleanTerms.forEach(keyword => {
                 json.data.forEach( book => {
-                    if(book.Tags.includes(tag) && !(booksWithTag.includes(book))){
+                    if(!booksWithTag.includes(book)){
+                        if(book.Tags.includes(keyword)||book.Author.includes(keyword))
                         booksWithTag.push(book);
                     }
                 });
             });
 
-            let string = newBookTags.join(', ');
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendation based on your recommendation.</p>`;
+            let string = cleanTerms.join(', ');
+            displayDiv.innerHTML += `<p class="prompt">You searched for <b>"${string}"</b><br>Here is our recommendation based on your recommendation.</p>`;
 
         }else{
-            booksWithTag =  json.data.filter( book => book.Tags.includes(newBookTag));
+            booksWithTag =  json.data.filter( book => book.Tags.includes(cleanTerm));
             console.log(booksWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${newBookTag}.</b><br>Here is our recommendation based on your recommendation.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${cleanTerm}.</b><br>Here is our recommendation based on your recommendation.</p>`;
         }
         
             booksWithTag.forEach( book => {
@@ -44,9 +46,9 @@ function displayDivs(){
                 let newP = document.createElement('p');
                 newP.innerHTML = "Tags: ";
                 book.Tags.forEach(tag => {
-                    if(newBookTags.length > 0 && newBookTags.includes(tag)){
+                    if(cleanTerms.length > 0 && cleanTerms.includes(tag)){
                         newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>, `;
-                    }else if (newBookTag == tag){
+                    }else if (cleanTerm == tag){
                         newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>, `;
                     } else{
                         newP.innerHTML += `<a href="show_tags.html?val=${tag}">${tag}</a>, `;
@@ -89,4 +91,3 @@ function showmore(){
     }
 
 }
-

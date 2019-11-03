@@ -1,4 +1,5 @@
 const displayDiv = document.getElementById('inner');
+const topBtn = document.getElementById("backToTop");
 
 let booksWithTag =[];//array that store all the books that has the searched tag
 
@@ -39,7 +40,10 @@ function displayDivs(){
                 bookDiv.classList.add('addedDiv');
                 bookDiv.setAttribute('id', `${book.id}`)
                 // console.log(book.Url);
-                bookDiv.innerHTML = `<img src="${book.Url}" class="covers">
+                bookDiv.innerHTML = `
+                    <div class="covers-div">
+                        <img src="${book.Url}" class="covers">
+                    </div>
                     <h3>${book.Name}</h3>
                     <p>Author: ${book.Author.join(" ")}</p>
                     <p>Publisher: ${book.Publisher} </p>
@@ -49,13 +53,12 @@ function displayDivs(){
                 newP.innerHTML = "Tags: ";
                 book.Tags.forEach(tag => {
                     if(newBookTags.length > 0 && newBookTags.includes(tag)){
-                        newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>, `;
+                        newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
                     }else if (newBookTag == tag){
-                        newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>, `;
+                        newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
                     } else{
-                        newP.innerHTML += `<a href="show_tags.html?val=${tag}">${tag}</a>, `;
+                        newP.innerHTML += `<a href="show_tags.html?val=${tag}">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
                     }
-                    
                 })
                 bookDiv.appendChild(newP);
                 bookDiv.innerHTML += `
@@ -94,3 +97,22 @@ function showmore(){
 
 }
 
+//======================  back to top button ========================
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener('scroll', ()=>{
+    scrollFunction();
+})
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

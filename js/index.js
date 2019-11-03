@@ -87,7 +87,6 @@ document.getElementById('closeModal').addEventListener('click', ()=>{
     ageSpan.innerText = age.toString();
 })
 
-
 nextbtn.addEventListener('click', ()=>{
     event.target.setAttribute('data-toggle', 'modal');
     event.target.setAttribute('data-target', '#secondModal');
@@ -103,10 +102,21 @@ document.getElementById('close').addEventListener('click', ()=>{
 $('#secondModal').on('show.bs.modal', function (e) {
     form.innerHTML = '';
     for (keys in tags) {
-        form.innerHTML += `<input type="checkbox" name="${keys}" value="${keys}" class="checkboxes">${keys}<br>`;
+        form.innerHTML += `<input type="checkbox" name="${keys}" value="${keys}" class="checkboxes">${keys}&nbsp&nbsp&nbsp&nbsp`;
     }
   });
 
+
+// document.getElementById('tagsCheckbox').addEventListener('input',()=>{
+//     let checkboxes = document.querySelectorAll('.checkboxes');
+//     for(let i=0; i<checkboxes.length; i++){
+//         if(checkboxes[i].checked){
+//             checkboxes[i].classList.add('box-checked');
+//             console.log(checkboxes[i].classList)
+//         }
+//     }
+// })
+ 
 document.getElementById('submitModalInfo').addEventListener('click', ()=>{
     let selected = [];
     let inputs = document.getElementsByClassName('checkboxes');
@@ -150,7 +160,7 @@ function changeToChinses() {
     document.getElementById('searchInfo').search.placeholder = "请输入搜索内容";
 
     //nav
-    let ul = document.querySelector('.navLink');
+    let ul = document.querySelector('.nav');
 
     for(let i=0; i<ul.childNodes.length; i++){
         switch(i){
@@ -229,7 +239,7 @@ function printChnTags(file){
 
 
 document.getElementById('yellow_button').addEventListener('click', ()=>{
-    console.log(chn)
+    // console.log(chn)
     if(chn === true){
         firstModal.innerHTML = `
             <div class="modal-dialog" role="document">
@@ -266,3 +276,5 @@ document.getElementById('searchInfo').addEventListener('submit', (event)=>{
     let input = event.target.search.value;
     console.log(input);
 })
+
+
