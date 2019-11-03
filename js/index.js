@@ -278,3 +278,13 @@ document.getElementById('searchInfo').addEventListener('submit', (event)=>{
 })
 
 
+// ===============================            responsive             =============================
+window.addEventListener('resize', ()=>{
+    if (window.innerWidth <= 765){
+        document.getElementById('chn').innerText = '中';
+        document.getElementById('eng').innerText = 'Eng';
+    }else{
+        document.getElementById('chn').innerText = '中文';
+        document.getElementById('eng').innerText = 'English';
+    }
+})
