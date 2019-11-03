@@ -13,7 +13,10 @@ function displayDivs(){
             let bookDiv = document.createElement('div');
             bookDiv.classList.add('addedDiv');
             bookDiv.setAttribute('id', `${book.id}`)
-            bookDiv.innerHTML = `<img src="${book.Url}" class="covers">
+            bookDiv.innerHTML = `
+                <div class="covers-div">
+                    <img src="${book.Url}" class="covers">
+                </div>
                 <h3>${book.Name}</h3>
                 <p>作者: ${book.Author.join(" ")}</p>
                 <p>出版方: ${book.Publisher} </p>
