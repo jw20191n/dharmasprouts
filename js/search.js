@@ -37,7 +37,10 @@ function displayResult(){
                 bookDiv.classList.add('addedDiv');
                 bookDiv.setAttribute('id', `${book.id}`)
                 // console.log(book.Url);
-                bookDiv.innerHTML = `<img src="${book.Url}" class="covers">
+                bookDiv.innerHTML = `
+                    <div class="covers-div">
+                        <img src="${book.Url}" class="covers">
+                    </div>
                     <h3>${book.Name}</h3>
                     <p>Author: ${book.Author.join(" ")}</p>
                     <p>Publisher: ${book.Publisher} </p>
@@ -65,7 +68,7 @@ function displayResult(){
                         <p>Description: ${book.Notes} <br> ${book.Access}</p>
                     </div>
                     <div class="show-more" onclick="showmore()">
-                        <a href="#${book.id}">... show more</a>
+                        <a class="btn " type="button" href="#${book.id}">... show more</a>
                     </div>`;
                 displayDiv.appendChild(bookDiv);
             })
@@ -90,4 +93,26 @@ function showmore(){
         event.target.innerText = '... show more';
     }
 
+}
+
+//======================  back to top button ========================
+const topBtn = document.getElementById('backToTop');
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener('scroll', ()=>{
+    scrollFunction();
+})
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
