@@ -77,7 +77,7 @@ addbtn.addEventListener('click', (event)=>{
 })
 
 minusbtn.addEventListener('click', (event)=>{
-    if (age >= 1){
+    if (age >= 3){
         age -= 1;
     }
     ageSpan.innerText = age.toString();
