@@ -32,7 +32,7 @@ function displayDivs(){
         }else{
             booksWithTag =  json.data.filter( book => book.Tags.includes(newBookTag));
             console.log(booksWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${newBookTag}.</b><br>Here is our recommendation based on your recommendation.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newBookTag}.</b><br>Here is our recommendation based on your recommendation.</p>`;
         }
         
             booksWithTag.forEach( book => {
