@@ -16,21 +16,38 @@ function displayResult(){
         if (cleanTerms.length>0){
             cleanTerms.forEach(keyword => {
                 json.data.forEach( book => {
+                    let lower = keyword.toLowerCase()
                     if(!booksWithTag.includes(book)){
-                        if(book.Tags.includes(keyword)||book.Author.includes(keyword))
-                        booksWithTag.push(book);
+                        let tags = book.Tags.map(tag=>tag.toLowerCase())
+                        let author = book.Author.map(author=>author.toLowerCase())
+                        let publisher = book.Publisher.toLowerCase();
+                        let notes = book.Notes.toLowerCase();
+                        if(publisher.includes(lower)||notes.includes(lower)){
+                            booksWithTag.push(book)
+                        }else{
+                            for(let i=0; i<tags.length;i++){
+                                if(tags[i].includes(lower)){
+                                    booksWithTag.push(book);
+                                }
+                            }
+                            for(let n=0; n<author.length;n++){
+                                if(author[n].includes(lower)){
+                                    booksWithTag.push(book)
+                                }
+                            }
+                        }     
                     }
                 });
             });
 
             let string = cleanTerms.join(', ');
             displayDiv.innerHTML += `<p class="prompt">You searched for <b>"${string}"</b><br>Here is our recommendation based on your recommendation.</p>`;
-
-        }else{
-            booksWithTag =  json.data.filter( book => book.Tags.includes(cleanTerm));
-            console.log(booksWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${cleanTerm}.</b><br>Here is our recommendation based on your recommendation.</p>`;
         }
+        // }else{
+        //     booksWithTag =  json.data.filter( book => book.Tags.includes(cleanTerm));
+        //     console.log(booksWithTag.length);
+        //     displayDiv.innerHTML += `<p class="prompt">You chosed <b>${cleanTerm}.</b><br>Here is our recommendation based on your recommendation.</p>`;
+        // }
         
             booksWithTag.forEach( book => {
                 let bookDiv = document.createElement('div');
@@ -70,11 +87,24 @@ function displayResult(){
                     <div class="show-more" onclick="showmore()">
                         <a class="btn " type="button" href="#${book.id}">... show more</a>
                     </div>`;
+
+
+                // let innerText = bookDiv.innerText;
+
+                // cleanTerms.forEach(keyword=> {
+                //     let index = innerText.indexOf(keyword); 
+                //     if (index >= 0) { 
+                //         console.log('!')
+                //         innerText = innerText.substring(0,index) + "<span class='redLink'>" + innerText.substring(index,index+keyword.length) + "</span>" + innerText.substring(index + keyword.length);
+                //         bookDiv.innerText = innerText;
+                //     }
+                // })
+             
                 displayDiv.appendChild(bookDiv);
             })
-       
-    });//end of getJson
 
+    });//end of getJson
+    
 }//end of displayDivs
 
 
