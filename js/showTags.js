@@ -27,12 +27,12 @@ function displayDivs(){
             });
 
             let string = newBookTags.join(', ');
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendation based on your recommendation.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendation based on your preference.</p>`;
 
         }else{
             booksWithTag =  json.data.filter( book => book.Tags.includes(newBookTag));
             console.log(booksWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newBookTag}.</b><br>Here is our recommendation based on your recommendation.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newBookTag}.</b><br>Here is our recommendation based on your preference.</p>`;
         }
         
             booksWithTag.forEach( book => {
