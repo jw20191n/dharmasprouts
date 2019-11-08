@@ -1,0 +1,32 @@
+{"data": [
+    {
+    "id": 102,
+    "Name": "Lord Buddha Short Stories For Kids in English - Inspiring Stories From The Life of Buddha",
+    "Producer": ["Geethanjali - Cartoons for Kids"],
+    "Tags": ["videos", "life of the Buddha", "Age 2-5", "Age 6-8"],
+    "Language": ["English"],
+    "Notes": "These cartoons tell stories of Buddha’s birth and his life. The short stories compiled are 35 minutes long, and are told in English.",
+    "Source": "https://youtu.be/sU1Gv-MkH0U",
+    "Url": "images/102-birth.png"
+},
+{
+    "id": 103,
+    "Name": "The Buddha",
+    "Producer": ["PBS"],
+    "Tags": ["videos", "life of the Buddha", "Age 9-12", "Age 13+"],
+    "Language": ["English"],
+    "Notes": "This PBS Documentary is available on Amazon (Free with Amazon Prime). Richard Gere narrates the story of Buddha with commentary from Historians and Buddhist practitioners. The documentary is 112 minutes long, and contains a combination of animation, ancient art, modern art, history, and different perspectives on the Buddha’s story.",
+    "Source": "Amazon Prime",
+    "Url": "images/103-thebuddha.png"
+},
+{
+    "id": 104,
+    "Name": "The Cup",
+    "Producer": ["Khyentse Norbu"],
+    "Tags": ["videos", "karma, virtues and non-virtues", "Age 6-8", "Age 9-12", "Age 13+"],
+    "Language": ["English"],
+    "Notes": "From the monastery in exile in India, the students eager to watch the soccer World Cup will do everything they can in order to do it. It takes a lot of effort and friendship from the students while the abbot, head of the monastery, faces the challenges of teaching ancient Buddhism nowadays. Dzongsar Khyentse Rinpoche is the director and writer of this interesting movie.",
+    "Source": "Amazon Prime",
+    "Url": "images/104-thecup.png"
+}]
+}

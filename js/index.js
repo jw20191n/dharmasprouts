@@ -13,15 +13,16 @@ const secondModal = document.getElementById('secondModal');
 //for page renders
 let tags = {}; //object keys are the name of the tags, values are the numbers of the tags appeared
 const ulDisplay = document.getElementById('display-tags');
+let books = []; //store db.json into an array;
 
 
 //====================         print tags when page first renders     ===========================
-function printTags(file){
+function printTags(){
     chn = false;
     checkScreen();
-    $.getJSON(file, function( json ) {
-        // console.log(json.data);
-        json.data.forEach( book => {
+    $.getJSON('db.json', function( json ) {
+        books = json.data;
+        books.forEach( book => {
             let tagsOfABook = book.Tags;//an array of a book's tags
 
             tagsOfABook.forEach(tag => {
@@ -38,9 +39,11 @@ function printTags(file){
         tagDiv.setAttribute('id', 'tag-div');
         ulDisplay.appendChild(tagDiv);
 
-        for (keys in tags) {
-            tagDiv.innerHTML += `<a class="tagsLink" href="show_tags.html?val=${keys}"><li>${keys}(${tags[keys]})</li></a>`;
-        }
+        Object.keys(tags).sort().forEach(function(key, value){
+            // console.log(key, tags[key])
+            tagDiv.innerHTML += `<a class="tagsLink" href="show_tags.html?val=${key}"><li>${key}(${tags[key]})</li></a>`;
+        })
+
         ulDisplay.innerHTML += `<div class="show-more" onclick="showmore()">
         <span>... view full list<span>
         </div>`
@@ -206,7 +209,7 @@ function changeToChinses() {
 
 function printChnTags(file){
     $.getJSON(file, function( json ) {
-        console.log(json.data);
+        // console.log(json.data);
         json.data.forEach( book => {
             let tagsOfABook = book.Tags;//an array of a book's tags
 

@@ -1,78 +1,124 @@
 const displayDiv = document.getElementById('inner');
 const topBtn = document.getElementById("backToTop");
 
-let booksWithTag =[];//array that store all the books that has the searched tag
+let contentWithTag =[];//array that store all the books that has the searched tag
 
 let url = window.location.toString();
-let bookTag = url.replace(/^.*?\=/,'');
-let newBookTag = bookTag.split('%20').join(' ');
-newBookTag = newBookTag.replace('%27', "'");
-let newBookTags = [];
+let contentTag = url.replace(/^.*?\=/,'');
+let newContentTag = contentTag.split('%20').join(' ');
+newContentTag = newContentTag.replace('%27', "'");
+let newContentTags = [];
+let bookContents = [];
+let appContents = [];
+let songContents= [];
+let videoContents = [];
 
-if (newBookTag.includes('&&')){
-    newBookTags = newBookTag.split('&&');
-    console.log(newBookTags);
+
+if (newContentTag.includes('&&')){
+    newContentTags = newContentTag.split('&&');
+    // console.log(newContentTags);
 }
 
 function displayDivs(){
     $.getJSON( "db.json", function( json ) {
 
-        if (newBookTags.length>0){
-            newBookTags.forEach(tag => {
-                json.data.forEach( book => {
-                    if(book.Tags.includes(tag) && !(booksWithTag.includes(book))){
-                        booksWithTag.push(book);
+        if (newContentTags.length>0){
+            newContentTags.forEach(tag => {
+                json.data.forEach( content => {
+                    if(content.Tags.includes(tag) && !(contentWithTag.includes(content))){
+                        contentWithTag.push(content);
                     }
                 });
             });
 
-            let string = newBookTags.join(', ');
+            let string = newContentTags.join(', ');
             displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendation based on your preferences.</p>`;
 
         }else{
-            booksWithTag =  json.data.filter( book => book.Tags.includes(newBookTag));
-            console.log(booksWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newBookTag}.</b><br>Here is our recommendation based on your preferences.</p>`;
+            contentWithTag =  json.data.filter( content => content.Tags.includes(newContentTag));
+            // console.log(contentWithTag.length);
+            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newContentTag}.</b><br>Here is our recommendation based on your preferences.</p>`;
         }
-        
-            booksWithTag.forEach( book => {
-                let bookDiv = document.createElement('div');
-                bookDiv.classList.add('addedDiv');
-                bookDiv.setAttribute('id', `${book.id}`)
-                // console.log(book.Url);
-                bookDiv.innerHTML = `
+            
+            contentWithTag.forEach( content => {
+                let contentDiv = document.createElement('div');
+                contentDiv.classList.add('addedDiv');
+                contentDiv.setAttribute('id', `${content.id}`);
+                contentDiv.innerHTML = `
                     <div class="covers-div">
-                        <img src="${book.Url}" class="covers">
+                        <img src="${content.Url}" class="covers">
                     </div>
-                    <h3>${book.Name}</h3>
-                    <p>Author: ${book.Author.join(" ")}</p>
-                    <p>Publisher: ${book.Publisher} </p>
-                    <p>Edition: ${book.Edition} </p>
-                    `
+                    <h3>${content.Name}</h3>
+                `;
+
+                if(content.Tags.includes("Book")){
+                    contentDiv.innerHTML += `
+                        <p><strong>Author:</strong> ${content.Author.join(" ")}</p>
+                        <p><strong>Publisher:</strong> ${content.Publisher} </p>
+                        <p><strong>Edition:</strong> ${content.Edition} </p>
+                        <div class="bookContent hideContent">
+                            <p><strong>Language:</strong> ${content.Language.join(" ")}</p>
+                            <p><strong>Cover Type:</strong> ${content.CoverType}</p>
+                            <p><strong>Pages:</strong> ${content.Pages}</p>
+                            <p><strong>Illustrator:</strong> ${content.Illustrator.join(" ")}</p>
+                            <p><strong>Description:</strong> ${content.Notes} <br> ${content.Access}</p>
+                        </div>
+                        `;
+                }else if(content.Tags.includes("App")){
+                    contentDiv.innerHTML += `
+                        <p><strong>Seller:</strong> ${content.Seller.join(" ")}</p>
+                        <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
+                        <div class="bookContent hideContent">
+                            <p></strong>Description:</strong> ${content.Notes} </p>
+                        </div>
+                         `;         
+                }else if(content.Tags.includes("Song")){
+                    contentDiv.innerHTML += `
+                        <p><strong>Singer:</strong> ${content.Singer.join(" ")}</p>
+                        <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
+                        <div class="bookContent hideContent">
+                            <p><strong>Lyrics:</strong> ${content.Lyrics.split("/").join("</br>")}</p>
+                            <p><strong>Source:</strong><a href="${content.Source}"> link to music</a></p>
+                        </div>
+                        `; 
+                }else if (content.Tags.includes("Video")){
+                    let link;
+                    if(content.Source.includes('http')){
+                        link = `<a href="${content.Source}">link to video</a>`
+                    }else{
+                        link = content.Source
+                    }
+
+                    contentDiv.innerHTML += `
+                        <p><strong>Producer:</strong> ${content.Producer.join(" ")}</p>
+                        <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
+                        <div class="bookContent hideContent">
+                            <p><strong>Description:</strong> ${content.Notes.split("/").join("</br>")}</p>
+                            <p><strong>Source:</strong> ${link}</p>
+                        </div>
+                        `; 
+                }
+
                 let newP = document.createElement('p');
-                newP.innerHTML = "Tags: ";
-                book.Tags.forEach(tag => {
-                    if(newBookTags.length > 0 && newBookTags.includes(tag)){
+                newP.innerHTML = "<strong>Tags:</strong> ";
+                content.Tags.forEach(tag => {
+                    if(newContentTags.length > 0 && newContentTags.includes(tag)){
                         newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
-                    }else if (newBookTag == tag){
+                    }else if (newContentTag == tag){
                         newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
                     } else{
                         newP.innerHTML += `<a href="show_tags.html?val=${tag}">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
                     }
                 })
-                bookDiv.appendChild(newP);
-                bookDiv.innerHTML += `
-                    <div class="bookContent hideContent">
-                        <p>Language: ${book.Language.join(" ")}</p>
-                        <p>Cover Type: ${book.CoverType}</p>
-                        <p>Pages: ${book.Pages}</p>
-                        <p>Illustrator: ${book.Illustrator.join(" ")}</p>
-                        <p>Description: ${book.Notes} <br> ${book.Access}</p>
-                    </div>
+                contentDiv.appendChild(newP);
+
+                contentDiv.innerHTML+= `
                     <div class="show-more" onclick="showmore()">
-                        <a class="btn " type="button" href="#${book.id}">... show more</a>
+                        <a class="btn " type="button" href="#${content.id}">... show more</a>
                     </div>`;
-                displayDiv.appendChild(bookDiv);
+                
+                displayDiv.appendChild(contentDiv);
+
             })
        
     });//end of getJson
@@ -81,8 +127,9 @@ function displayDivs(){
 
 
 function showmore(){
+    console.log(event.target);
     let linkText = event.target.innerText;
-    let targetDiv = event.target.parentNode.previousElementSibling;
+    let targetDiv = event.target.parentNode.previousElementSibling.previousElementSibling;
  
 
     if(linkText === '... show more'){
