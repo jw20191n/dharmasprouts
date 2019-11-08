@@ -127,7 +127,7 @@ function displayDivs(){
 
 
 function showmore(){
-    console.log(event.target);
+    // console.log(event.target);
     let linkText = event.target.innerText;
     let targetDiv = event.target.parentNode.previousElementSibling.previousElementSibling;
  

@@ -8,14 +8,16 @@ let cleanTerms = bookTag.split('+');
 // cleanTerm = cleanTerm.replace('%27', "'");
 let cleanTerm = cleanTerms.join(' ');
  
-console.log(cleanTerms);
+// console.log(cleanTerms);
 
 function displayResult(){
     $.getJSON( "db.json", function( json ) {
 
+        let books = json.data.filter(content => content.Tags.includes("Book"));
+
         if (cleanTerms.length>0){
             cleanTerms.forEach(keyword => {
-                json.data.forEach( book => {
+                books.forEach( book => {
                     let lower = keyword.toLowerCase()
                     if(!booksWithTag.includes(book)){
                         let tags = book.Tags.map(tag=>tag.toLowerCase())
