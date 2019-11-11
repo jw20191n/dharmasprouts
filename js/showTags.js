@@ -46,7 +46,7 @@ function displayDivs(){
                 contentDiv.setAttribute('id', `${content.id}`);
                 contentDiv.innerHTML = `
                     <div class="covers-div">
-                        <img src="${content.Url}" class="covers">
+                        <img src="${content.Url}" class="covers" alt="${content.Name} Cover">
                     </div>
                     <h3>${content.Name}</h3>
                 `;
