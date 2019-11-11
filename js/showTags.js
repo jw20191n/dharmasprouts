@@ -97,6 +97,15 @@ function displayDivs(){
                             <p><strong>Source:</strong> ${link}</p>
                         </div>
                         `; 
+                }else if(content.Tags.includes("Website")){
+                    contentDiv.innerHTML += `
+                        <p><strong>Publisher:</strong> ${content.Publisher} </p>
+                        <div class="bookContent hideContent">
+                            <p><strong>Language:</strong> ${content.Language.join(" ")}</p>
+                            <p><strong>Description:</strong> ${content.Notes} </p>
+                            <p><strong>Access:</strong><a href="${content.Access}"> ${content.Access}</a></p>
+                        </div>
+                        `;
                 }
 
                 let newP = document.createElement('p');

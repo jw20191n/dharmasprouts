@@ -26,10 +26,12 @@ function printTags(){
             let tagsOfABook = book.Tags;//an array of a book's tags
 
             tagsOfABook.forEach(tag => {
-                if (tags.hasOwnProperty(tag)){
-                    tags[tag] = tags[tag] + 1;
+                let newTag = tag.charAt(0).toUpperCase() + tag.slice(1);
+                // console.log(newTag)
+                if (tags.hasOwnProperty(newTag)){
+                    tags[newTag] = tags[newTag] + 1;
                 }else{
-                    tags[tag] = 1;
+                    tags[newTag] = 1;
                 }
             })
         })
@@ -106,8 +108,15 @@ document.getElementById('close').addEventListener('click', ()=>{
 
 $('#secondModal').on('show.bs.modal', function (e) {
     form.innerHTML = '';
+    let n = 0;
     for (keys in tags) {
-        form.innerHTML += `<input type="checkbox" name="${keys}" value="${keys}" class="checkboxes">${keys}&nbsp&nbsp&nbsp&nbsp`;
+        form.innerHTML += `<div class="form-group">
+            <input type="checkbox" id="checkbox-${n}" name="${keys}" value="${keys}" class="checkboxes">
+           ${keys}
+            </div>`
+        // <label for="checkbox-${n}">${keys}</label>
+        // ${keys}&nbsp&nbsp&nbsp&nbsp;
+        n++;
     }
   });
 

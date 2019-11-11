@@ -205,9 +205,9 @@ div#number-btn-group button{
     background: #FDE47C;
 }
 
-.checkboxes{
+/* .checkboxes{
     margin: 5px;
-}
+} */
 
 input.box-checked{
     background: whitesmoke;
@@ -215,6 +215,30 @@ input.box-checked{
     border: 2px solid white;
     border-radius: 20px;
 }
+
+
+input{
+    margin:0px;
+}
+
+/* input, label {
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+div.form-group{
+    display: inline-block;
+    vertical-align: middle;
+    /* text-align: left; */
+    margin: 3px 8px 3px 8px;
+}
+
+/* input[type="checkbox"]
+{
+    vertical-align:middle;
+} */
+
+
 /* -----------------------content3: pic container--------------------- */
 
 #content_pic_container{
@@ -665,7 +689,12 @@ div .addedDiv {
     margin: 0px 15px 10px 0px;
 }
 
-
+div.form-group{
+    display: block;
+    /* vertical-align: middle; */
+    text-align: left;
+    margin: 3px 8px 3px 8px;
+}
 
 
 

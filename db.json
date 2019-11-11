@@ -381,7 +381,7 @@
 	"CoverType": "Paperback", 
 	"Pages": 80,
 	"Illustrator": ["Eva Van Dam"],
-	"Publisher": "Shambala Publications, Inc.", 
+	"Publisher": "Shambhala Publications, Inc.", 
 	"Edition": "first edition (1991)",
 	"Notes" : "Written in comic book-style, this is the classical story of the life of the great Kagyu master Milarepa. It demonstrates that black deeds such as jealousy and hatred perpetuate destruction, fear, and unhappiness, and that white deeds accumulated on the Dharma path, especially diligence, meditation, and most importantly, following the guru's advice, bring happiness and eventual liberation from samsara. A dramatic story filled with miraculous deeds and accomplishments, it is sure to inspire youth to virtue.",
 	"Access": "This book can be ordered online.",
@@ -1117,7 +1117,7 @@
 	"CoverType": "Paperback",
 	"Pages": 267,
 	"Illustrator": ["- (reproductions of portions of thangkas)"],
-	"Publisher": "Shambala Publications",
+	"Publisher": "Shambhala Publications",
 	"Edition": "first edition (1982)",
 	"Notes": "A biography of the Tantric master credited with establishing the Kagyu lineage. The book chronicles Marpa's three trips from Tibet to India to recover traditions and teachings which had been suppressed in Tibet by a nasty king. Marpa was not a monk, but a “householder, farmer, husband, and father. He ate good food, drank lots of barley beer, and lost his temper with his wife and children… Marpa did not try to become a special or different kind of person, but simply used his ordinariness as a path, and as such it became the expression of the ground and and fruition of his realization of mahamudra.” (from the book’s introduction). The book includes the story of his journey as a youth. It contains an extensive glossary, index, and helpful table of contents.",
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ767 .M37.",
@@ -1542,7 +1542,7 @@
 	"Tags": ["Song", "family relationships", "compassion and loving kindness", "Age 2-5", "Age 6-8"],
 	"Language": ["English"],
 	"Lyrics": "Be kind to all your friends and family/Be kind to cats and butterflies and trees/Don’t hurt the fishes swimming in the sea/Here is what the Buddha says to me/To love is to care for all living around us/To love is to be kind to all beings around us",
-	"Source": "https://youtu.be/z0YlBA8iNKQ",
+	"Access": "https://youtu.be/z0YlBA8iNKQ",
 	"Url": "images/99-tolove.png",
 	"id": 99
 },
@@ -1552,7 +1552,7 @@
 	"Tags": ["Song", "life of the Buddha", "Age 2-5", "Age 6-8"],
 	"Language": ["English"],
 	"Lyrics": "In the ancient land/A child is born/Once in a time so long/And the gods and men/So they said/Homage to the Lord/*Namo tassa bhagavato arahato/Samma-sambuddhassa./*Translation:/Homage to that Lord, the Worthy One,/Perfectly enlightened by Himself.",
-	"Source": "https://youtu.be/0QNUKcwohcg",
+	"Access": "https://youtu.be/0QNUKcwohcg",
 	"Url": "images/100-birth.png",
 	"id": 100
 },
@@ -1562,7 +1562,7 @@
 	"Tags": ["Song", "meditation", "Age 2-5", "Age 6-8"],
 	"Language": ["English"],
 	"Lyrics": "Come and sit by my side if you’re lonely,/Close your eyes drink some tea together,/Breathing in breathing out, smile and calm,/You will feel that the life is so true./Come and sit by my side if you’re tired,/Close your eyes put your hands on your heart,/Breathing in breathing out, smile and calm,/You will feel that the life is so true./Come and sit by my side if you cry,/Close your eyes put your hands on the earth,/Breathing in breathing out, smile and calm,/You will feel that the life is happy",
-	"Source": "https://youtu.be/bqj42JAUxE4",
+	"Access": "https://youtu.be/bqj42JAUxE4",
 	"Url": "images/101-comeandsit.png",
 	"id": 101
 },
@@ -1572,17 +1572,18 @@
     "Tags": ["Video", "life of the Buddha", "Age 2-5", "Age 6-8"],
     "Language": ["English"],
     "Notes": "These cartoons tell stories of Buddha’s birth and his life. The short stories compiled are 35 minutes long, and are told in English.",
-    "Source": "https://youtu.be/sU1Gv-MkH0U",
+    "Access": "https://youtu.be/sU1Gv-MkH0U",
 	"Url": "images/102-birth.png",
 	"id": 102
 },
 {
-    "Name": "The Buddha",
+	"Name": "The Buddha: A Film",
     "Producer": ["PBS"],
-    "Tags": ["Video", "life of the Buddha", "Age 9-12", "Age 13+"],
+    "Tags": ["Video", "life of the Buddha", "meditation", "Age 13+"],
     "Language": ["English"],
-    "Notes": "This PBS Documentary is available on Amazon (Free with Amazon Prime). Richard Gere narrates the story of Buddha with commentary from Historians and Buddhist practitioners. The documentary is 112 minutes long, and contains a combination of animation, ancient art, modern art, history, and different perspectives on the Buddha’s story.",
-    "Source": "Amazon Prime",
+    "Length": "112 minutes",
+    "Notes": "This 2010 PBS Documentary is available on Amazon (Free with Amazon Prime). The Buddha’s life narrated by Richard Gere was undertaken in conjunction with the Asia Society Museum. includes a timeline of major events in the Buddha’s life, a map of India, Buddhist art, related articles by and interviews with contemporary Western Buddhist teachers, games, and resources for teaching mindfulness.",
+    "Access": "Amazon Prime, DVD or Blue-ray",
 	"Url": "images/103-thebuddha.png",
 	"id": 103
 },
@@ -1592,7 +1593,7 @@
     "Tags": ["Video", "karma, virtues and non-virtues", "Age 6-8", "Age 9-12", "Age 13+"],
     "Language": ["English"],
     "Notes": "From the monastery in exile in India, the students eager to watch the soccer World Cup will do everything they can in order to do it. It takes a lot of effort and friendship from the students while the abbot, head of the monastery, faces the challenges of teaching ancient Buddhism nowadays. Dzongsar Khyentse Rinpoche is the director and writer of this interesting movie.",
-    "Source": "Amazon Prime",
+    "Access": "Amazon Prime",
 	"Url": "images/104-thecup.png",
 	"id": 104
 },
@@ -1819,5 +1820,42 @@
 	"Access": "This book can be ordered online and is also available in the TKL library, call number BQ1462.E5 M45.",
 	"Url": "images/118-buddhistanimalwisdomstories.png",
 	"id": 118
-}]
+},
+{
+	"ISBN": "-",
+	"Name": "Buddhist Studies for Primary and Secondary Students",
+	"Tags": ["Website", "compassion and loving kindness", "refuge", "life of the Buddha", "Buddha's previous lives aka Jataka tales", "karma, virtues and non-virtues", "Buddha's teachings aka Four Noble Truths, Eightfold Path, interdependent origination, five aggregates, etc.", "meditation", "folktales", "family relationship", "Age 6-8", "Age 9-12", "Age 13+", "For Teachers"],
+	"Language": ["English"],
+	"CoverType": "-",
+	"Pages": 0, 
+	"Illustrator": ["-"],
+	"Publisher": "Buddha Dharma Education Association and BuddhaNet",
+	"Notes": "This extensive and well-developed Mahayana curriculum contains units on the Buddha’s life story, refuge, morality, meditation, Guided meditations, groups activities, stories, songs, puzzles, plays, quizzes.",
+	"Access": "buddhanet.net",
+	"Url": "images/119-buddhanet.gif",
+	"id": 119
+},
+{
+	"ISBN": "-",
+	"Name": "Buddhism for Kids",
+	"Tags": ["Website", "life of the Buddha", "Buddha's teachings aka Four Noble Truths, Eightfold Path, interdependent origination, five aggregates, etc.", "meditation", "Buddhist holy days", "Age 6-8", "Age 9-12", "For Teachers"],
+	"Language": ["English"],
+	"Publisher": "Dharmarealm Buddhist Association",
+	"Notes": "This website, developed by three Western Buddhist monastics practicing in the Chinese tradition at of the City of Ten Thousand Buddhas, Ukiah Valley California, contains a number of useful materials for teachers to use with children, including clear definitions of core tenets of the Mahayana teachings.",
+	"Access": "buddhismforkids.net",
+	"Url": "images/120-buddhism4kids.png",
+	"id": 120
+},
+{
+	"ISBN": "-",
+	"Name": "Bodhi Kids",
+	"Tags": ["Website", "family relationship", "Buddha's teachings aka Four Noble Truths, Eightfold Path, interdependent origination, five aggregates, etc.", "Age 13+", "For Teachers"],
+	"Language": ["English"],
+	"Publisher": "Khyentse Foundation",
+	"Notes": "This website contains inspiration for youth, parents, and teachers on family relationships, personal growth, and parenting. It includes interviews with Tibetan Buddhist masters on family life and child raising.",
+	"Access": "bodhikids.org",
+	"Url": "images/121-bodhikids.jpg",
+	"id": 121
+}
+]
 }
