@@ -32,12 +32,12 @@ function displayDivs(){
             });
 
             let string = newContentTags.join(', ');
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendation based on your preferences.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendations based on your preferences.</p>`;
 
         }else{
             contentWithTag =  json.data.filter( content => content.Tags.includes(newContentTag));
             // console.log(contentWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newContentTag}.</b><br>Here is our recommendation based on your preferences.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newContentTag}.</b><br>Here is our recommendations based on your preferences.</p>`;
         }
             
             contentWithTag.forEach( content => {
