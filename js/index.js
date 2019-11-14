@@ -39,7 +39,11 @@ function printTags(){
         tagDiv.setAttribute('id', 'tag-div');
         ulDisplay.appendChild(tagDiv);
 
-        Object.keys(tags).sort().forEach(function(key, value){
+        let tagsCopy = Object.keys(tags).sort();
+        tagsCopy.shift();
+        tagsCopy.splice(3, 0, 'Age 13+');
+
+        tagsCopy.forEach(function(key, value){
             // console.log(key, tags[key])
             tagDiv.innerHTML += `<a class="tagsLink" href="show_tags.html?val=${key}"><li>${key}(${tags[key]})</li></a>`;
         })
