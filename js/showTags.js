@@ -3,7 +3,7 @@ const topBtn = document.getElementById("backToTop");
 
 let contentWithTag =[];//array that store all the books that has the searched tag
 
-let url = window.location.toString().toLowerCase();
+let url = window.location.toString();
 let contentTag = url.replace(/^.*?\=/,'');
 let newContentTag = contentTag.split('%20').join(' ');
 newContentTag = newContentTag.replace('%27', "'");
@@ -83,8 +83,8 @@ function displayDivs(){
                         `; 
                 }else if (content.Tags.includes("Video")){
                     let link;
-                    if(content.Source.includes('http')){
-                        link = `<a href="${content.Source}">link to video</a>`
+                    if(content.Access.includes('http')){
+                        link = `<a href="${content.Access}">link to video</a>`
                     }else{
                         link = content.Source
                     }
