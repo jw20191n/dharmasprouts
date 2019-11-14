@@ -26,12 +26,10 @@ function printTags(){
             let tagsOfABook = book.Tags;//an array of a book's tags
 
             tagsOfABook.forEach(tag => {
-                let newTag = tag.charAt(0).toUpperCase() + tag.slice(1);
-                // console.log(newTag)
-                if (tags.hasOwnProperty(newTag)){
-                    tags[newTag] = tags[newTag] + 1;
+                if (tags.hasOwnProperty(tag)){
+                    tags[tag] = tags[tag] + 1;
                 }else{
-                    tags[newTag] = 1;
+                    tags[tag] = 1;
                 }
             })
         })
