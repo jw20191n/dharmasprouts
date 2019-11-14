@@ -3,7 +3,7 @@ const topBtn = document.getElementById("backToTop");
 
 let contentWithTag =[];//array that store all the books that has the searched tag
 
-let url = window.location.toString();
+let url = window.location.toString().toLowerCase();
 let contentTag = url.replace(/^.*?\=/,'');
 let newContentTag = contentTag.split('%20').join(' ');
 newContentTag = newContentTag.replace('%27', "'");
@@ -32,12 +32,12 @@ function displayDivs(){
             });
 
             let string = newContentTags.join(', ');
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here is our recommendations based on your preferences.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here are the results based on your preferences.</p>`;
 
         }else{
             contentWithTag =  json.data.filter( content => content.Tags.includes(newContentTag));
             // console.log(contentWithTag.length);
-            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newContentTag}.</b><br>Here is our recommendations based on your preferences.</p>`;
+            displayDiv.innerHTML += `<p class="prompt">You chose <b>${newContentTag}.</b><br>Here are the results based on your preferences.</p>`;
         }
             
             contentWithTag.forEach( content => {
