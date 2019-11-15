@@ -48,9 +48,7 @@ function printTags(){
             tagDiv.innerHTML += `<a class="tagsLink" href="show_tags.html?val=${key}"><li>${key}(${tags[key]})</li></a>`;
         })
 
-        ulDisplay.innerHTML += `<div class="show-more" onclick="showmore()">
-        <span>... view full list<span>
-        </div>`
+        ulDisplay.innerHTML += `<div class="show-more" onclick="showmore()"><span>... view full list<span></div>`
     });//end of getJson
 
 }

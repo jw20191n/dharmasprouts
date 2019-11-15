@@ -17,7 +17,17 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    /* box-shadow: 0 6px whitesmoke; */
 } 
+
+button#yellow_button:hover{
+    /* margin-top:2px;
+    box-shadow: 0 4px whitesmoke; */
+    background: #F5853F;
+    color: whitesmoke;
+    border: 2px dashed whitesmoke;
+    cursor: pointer;
+}
 
 /********************     HEADER   ****************** */
 /* header left */
@@ -420,6 +430,11 @@ div .addedDiv {
 
 .show-more span{
     color: #007bff;
+}
+
+.show-more span:hover{
+    color: #0056b3;
+    cursor: pointer;
 }
 
 
