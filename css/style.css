@@ -177,7 +177,7 @@ div#right {
 div.custom-modal{
     background: #F5853F;
     flex-direction: row;
-    text-align: center;
+    /* text-align: center; */
     color: white;
     font-size: 20px;
     padding: 50px;
@@ -187,7 +187,7 @@ div.custom-modal{
 div.second-custom-modal{
     background: #F5853F;
     flex-direction: row;
-    text-align: left;
+    /* text-align: left; */
     color: white;
     font-size: 20px;
     padding: 50px;
@@ -199,25 +199,25 @@ div.custom-modal span{
     padding-right: 25px;
 }
 
-div#number-btn-group{
-    margin: 20px;
+#agesCheckbox{
+    margin-left:30%;
 }
 
-div#number-btn-group button{
-    border: none;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    color: #C93713;
+.header-span{
+    margin-left:15%;
+    color: #4C5B5C;
+    font-size: 25px;
+    padding-bottom:40px;
+}
+
+.sub-header-span{
+    color: #4C5B5C;
 }
 
 .custom-modal-btn{
     background: #FDE47C;
 }
 
-/* .checkboxes{
-    margin: 5px;
-} */
 
 input.box-checked{
     background: whitesmoke;
@@ -226,27 +226,17 @@ input.box-checked{
     border-radius: 20px;
 }
 
-
 input{
     margin:0px;
 }
 
-/* input, label {
-    display: inline-block;
-    vertical-align: middle;
-} */
-
 div.form-group{
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: left;
     /* text-align: left; */
     margin: 3px 8px 3px 8px;
 }
 
-/* input[type="checkbox"]
-{
-    vertical-align:middle;
-} */
 
 
 /* -----------------------content3: pic container--------------------- */
@@ -614,6 +604,14 @@ div#right {
     border-radius: 5px;
 } 
 
+/* modal */
+
+.header-span{
+    margin-left:5%;
+    color: #4C5B5C;
+    font-size: 22px;
+}
+
 /* content area below picture */
 #intro_tags{
     flex-direction: column;
@@ -703,10 +701,6 @@ div .addedDiv {
     padding: 0px 15px 10px 0px;
     margin: 0px 15px 10px 0px;
 }
-
-
-
-
 
 }
 
