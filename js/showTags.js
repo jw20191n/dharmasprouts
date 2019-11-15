@@ -3,40 +3,52 @@ const topBtn = document.getElementById("backToTop");
 
 let contentWithTag =[];//array that store all the books that has the searched tag
 
+//parse url to get the tags that user chose
 let url = window.location.toString();
 let contentTag = url.replace(/^.*?\=/,'');
 let newContentTag = contentTag.split('%20').join(' ');
-newContentTag = newContentTag.replace('%27', "'");
-let newContentTags = [];
-let bookContents = [];
-let appContents = [];
-let songContents= [];
-let videoContents = [];
+newContentTag = newContentTag.replace('%27', "'");//string that user sent 
+let newContentTags = [];//if the string above contains '&&', split string into array
 
 
 if (newContentTag.includes('&&')){
     newContentTags = newContentTag.split('&&');
-    // console.log(newContentTags);
 }
 
 function displayDivs(){
     $.getJSON( "db.json", function( json ) {
+        //if this page is directed from 'set preference modal'
+        let data = json.data;
+        let checker = (tags, target) => target.every(tag => tags.includes(tag));
 
-        if (newContentTags.length>0){
-            newContentTags.forEach(tag => {
-                json.data.forEach( content => {
-                    if(content.Tags.includes(tag) && !(contentWithTag.includes(content))){
-                        contentWithTag.push(content);
-                    }
-                });
-            });
+        if(newContentTags.length>0){
+            for(let i=0; i< data.length; i++){
+                if(checker(data[i].Tags, newContentTags)){
+                    contentWithTag.push(data[i]);
+                }
+            }
+        
+        // below show broader result that if one of tags your set is met
+        // item would appear on the screen 
+        
+        //     newContentTags.forEach(tag => {
+        //         json.data.forEach( content => {
+        //             if(content.Tags.includes(tag) && !(contentWithTag.includes(content))){
+        //                 contentWithTag.push(content);
+        //             }
+        //         });
+        //     });
 
             let string = newContentTags.join(', ');
-            displayDiv.innerHTML += `<p class="prompt">You chosed <b>${string}.</b><br>Here are the results based on your preferences.</p>`;
-
+            if(contentWithTag.length === 0){
+                displayDiv.innerHTML += `<p class="prompt">You chose <b>${string}.</b><br>No results found. Please try reset your preferences.</p>`;
+            }else{
+                displayDiv.innerHTML += `<p class="prompt">You chose <b>${string}.</b><br>Here are the results based on your preferences.</p>`;
+            }
+            
         }else{
+            //if this page is reached by clicking on tags in index.html
             contentWithTag =  json.data.filter( content => content.Tags.includes(newContentTag));
-            // console.log(contentWithTag.length);
             displayDiv.innerHTML += `<p class="prompt">You chose <b>${newContentTag}.</b><br>Here are the results based on your preferences.</p>`;
         }
             
@@ -125,10 +137,11 @@ function displayDivs(){
                     <div class="show-more" onclick="showmore()">
                         <a class="btn " type="button" href="#${content.id}">... show more</a>
                     </div>`;
-                
+        
+
                 displayDiv.appendChild(contentDiv);
 
-            })
+            })//end of contentWithTag.forEach
        
     });//end of getJson
 
@@ -167,7 +180,6 @@ function scrollFunction() {
         topBtn.style.display = "none";
     }
 }
-
 
 function topFunction() {
   document.body.scrollTop = 0;
