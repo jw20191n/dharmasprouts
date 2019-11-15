@@ -1,7 +1,6 @@
 //for modal
-const ageSpan = document.getElementById('ageNumber');
-const addbtn = document.getElementById('add');
-const minusbtn = document.getElementById('minus');
+const modalbtn = document.getElementById('yellow_button')
+const ageForm = document.getElementById('agesCheckbox');
 const nextbtn = document.getElementById('nextModal');
 const form = document.getElementById('tagsCheckbox');
 
@@ -72,52 +71,57 @@ function showmore() {
 
 
 //<!--------------         Modal             ---------->
-let age = 5;
-ageSpan.innerText = age.toString();
-
-addbtn.addEventListener('click', (event)=>{
-    age += 1;
-    ageSpan.innerText = age.toString();
-    event.preventDefault();
-})
-
-minusbtn.addEventListener('click', (event)=>{
-    if (age >= 3){
-        age -= 1;
-    }
-    ageSpan.innerText = age.toString();
-    event.preventDefault();
-})
+let selected = [];
 
 document.getElementById('closeModal').addEventListener('click', ()=>{
-    age = 5;
-    ageSpan.innerText = age.toString();
+    selected = [];
 })
 
 nextbtn.addEventListener('click', ()=>{
     event.target.setAttribute('data-toggle', 'modal');
     event.target.setAttribute('data-target', '#secondModal');
+
+    let inputs = document.getElementsByClassName('ageCheckboxes');
+    for (let i=0; i<inputs.length; i++){
+        if(inputs[i].checked){
+            selected.push(inputs[i].value);
+        }
+    }
+    console.log(selected)
 })
 
 document.getElementById('close').addEventListener('click', ()=>{
-    age = 5;
-    ageSpan.innerText = age.toString();
+    selected = [];
     $('.modal').modal('hide');
 })
 
 
 $('#secondModal').on('show.bs.modal', function (e) {
-    form.innerHTML = '';
+    form.innerHTML = '<span class="header-span">Select Your Preferences</span><br><span class="sub-header-span">Media Type</span></br>';
     let n = 0;
-    for (keys in tags) {
-        form.innerHTML += `<div class="form-group">
-            <input type="checkbox" id="checkbox-${n}" name="${keys}" value="${keys}" class="checkboxes">
-           ${keys}
-            </div>`
-        // <label for="checkbox-${n}">${keys}</label>
-        // ${keys}&nbsp&nbsp&nbsp&nbsp;
+    let media = ['App', 'Book', 'Song', 'Video', 'Website'];
+    let ages = ['Age 2-5', 'Age 6-8', 'Age 9-12', 'Age 13+', 'For Teachers'];
+    let topics = Object.keys(tags).filter(tag=> !media.includes(tag)&& !ages.includes(tag))
+
+    //add media tags
+    media.forEach(media => {
+        form.innerHTML += `
+        <div class="form-group">
+        <input type="checkbox" id="checkbox-${n}" name="${media}" value="${media}" class="checkboxes">
+        ${media}
+        </div>`
         n++;
-    }
+    })
+    //add topic tags
+    form.innerHTML += '<br><span class="sub-header-span">Topics</span></br>';
+    topics.forEach(topic=>{
+        form.innerHTML += `
+        <div class="form-group">
+        <input type="checkbox" id="checkbox-${n}" name="${topic}" value="${topic}" class="checkboxes">
+        ${topic}
+        </div>`
+        n++;
+    })
   });
 
 
@@ -132,7 +136,6 @@ $('#secondModal').on('show.bs.modal', function (e) {
 // })
  
 document.getElementById('submitModalInfo').addEventListener('click', ()=>{
-    let selected = [];
     let inputs = document.getElementsByClassName('checkboxes');
 
     for (let i=0; i<inputs.length; i++){
@@ -141,16 +144,6 @@ document.getElementById('submitModalInfo').addEventListener('click', ()=>{
         }
     }
 
-    if (age >=2 && age <= 5){
-        selected.push('Age 2-5');
-    }else if (age >= 6 && age <= 8){
-        selected.push('Age 6-8');
-    }else if (age >= 9 && age <= 12){
-        selected.push('Age 9-12');
-    }else if (age >= 13){
-        selected.push('Age 13+');
-    }
-    console.log(age);
     console.log(selected);
 
     if (selected.length>0){

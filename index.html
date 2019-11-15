@@ -73,12 +73,14 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body custom-modal">
-            <span>Select Age</span>
-            <div id="number-btn-group">
-              <button id="minus">-</button>
-                <span id="ageNumber"></span>
-              <button id="add">+</button>
-            </div>
+            <span class="header-span">Select Your Preferences</span>
+            <form action="" id="agesCheckbox">
+                <input type="checkbox" name="Age2-5" value="Age 2-5" class="ageCheckboxes"> Age 2-5<br>
+                <input type="checkbox" name="Age6-8" value="Age 6-8" class="ageCheckboxes"> Age 6-8<br>
+                <input type="checkbox" name="Age9-12" value="Age 9-12" class="ageCheckboxes"> Age 9-12<br>
+                <input type="checkbox" name="Age13+" value="Age 13+" class="ageCheckboxes"> Age 13+<br>
+                <input type="checkbox" name="forTeachers" value="For Teachers" class="ageCheckboxes"> For Teachers
+            </form>
           </div>
           <div class="modal-footer custom-modal">
             <button type="button" class="btn custom-modal-btn" data-dismiss="modal" id="closeModal">Close</button>
