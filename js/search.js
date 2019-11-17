@@ -11,7 +11,7 @@ let searchedTerm = cleanTerm.toLowerCase();
  
 
 function displayResult(){
-    console.log(searchedTerm);
+    // console.log(searchedTerm);
 
     $.getJSON( "db.json", function( json ) {
 
@@ -26,19 +26,14 @@ function displayResult(){
                     let illustrators = content.Illustrator.map(illustrator => illustrator.toLowerCase())
                
                     if(content.Name.toLowerCase().includes(searchedTerm) || content.Publisher.toLowerCase().includes(searchedTerm)){
-                        console.log('name or publisher')
                         contentWithTags.push(content)
                     }else if (content.Notes.toLowerCase().includes(searchedTerm)){
-                        console.log('notes')
                         contentWithTags.push(content);
                     }else if(authors.filter(author=> author.includes(searchedTerm)).length > 0 ){
-                        console.log('author')
                         contentWithTags.push(content)
                     }else if (illustrators.filter(illustrator=> illustrator.includes(searchedTerm)).length > 0 ){
-                        console.log('illustrator')
                         contentWithTags.push(content)
                     }else if(language.includes(searchedTerm)){
-                        console.log('language')
                         contentWithTags.push(content)
                     }else{
                         for(let i=0; i<tags.length;i++){
@@ -53,16 +48,12 @@ function displayResult(){
                     let seller = content.Seller.map(seller => seller.toLowerCase());
                     
                     if(content.Name.toLowerCase().includes(searchedTerm)){
-                        console.log('name')
                         contentWithTags.push(content)
                     }else if (content.Notes.toLowerCase().includes(searchedTerm)){
-                        console.log('notes')
                         contentWithTags.push(content);
                     }else if(seller.filter(seller=> seller.includes(cleanTerm)).length > 0 ){
-                        console.log('seller')
                         contentWithTags.push(content)
                     }else if(language.includes(searchedTerm)){
-                        console.log('language')
                         contentWithTags.push(content)
                     }else{
                         for(let i=0; i<tags.length;i++){
@@ -77,16 +68,12 @@ function displayResult(){
                     let singer = content.Singer.map(singer => singer.toLowerCase());
                     
                     if(content.Name.toLowerCase().includes(searchedTerm)){
-                        console.log('name')
                         contentWithTags.push(content)
                     }else if (content.Lyrics.toLowerCase().includes(searchedTerm)){
-                        console.log('lyrics')
                         contentWithTags.push(content);
                     }else if(singer.filter(singer=> singer.includes(cleanTerm)).length > 0 ){
-                        console.log('singer')
                         contentWithTags.push(content)
                     }else if(language.includes(searchedTerm)){
-                        console.log('language')
                         contentWithTags.push(content)
                     }else{
                         for(let i=0; i<tags.length;i++){
@@ -101,16 +88,12 @@ function displayResult(){
                     let producer = content.Producer.map(producer => producer.toLowerCase());
                     
                     if(content.Name.toLowerCase().includes(searchedTerm)){
-                        console.log('name')
                         contentWithTags.push(content)
                     }else if (content.Notes.toLowerCase().includes(searchedTerm)){
-                        console.log('notes')
                         contentWithTags.push(content);
                     }else if(producer.filter(producer=> producer.includes(cleanTerm)).length > 0 ){
-                        console.log('producer')
                         contentWithTags.push(content)
                     }else if(language.includes(searchedTerm)){
-                        console.log('language')
                         contentWithTags.push(content)
                     }else{
                         for(let i=0; i<tags.length;i++){
@@ -124,16 +107,12 @@ function displayResult(){
                 if(content.Tags.includes('Website')){
                 
                     if(content.Name.toLowerCase().includes(searchedTerm)){
-                        console.log('name')
                         contentWithTags.push(content)
                     }else if (content.Notes.toLowerCase().includes(searchedTerm)){
-                        console.log('notes')
                         contentWithTags.push(content);
                     }else if(content.Publisher.toLowerCase().includes(searchedTerm)){
-                        console.log('publisher')
                         contentWithTags.push(content)
                     }else if(language.includes(searchedTerm)){
-                        console.log('language')
                         contentWithTags.push(content)
                     }else{
                         for(let i=0; i<tags.length;i++){
@@ -144,11 +123,12 @@ function displayResult(){
                     }
                 }//end of if website
 
-            } //end of if !contentWithTags.includes(content)           
+            }         
         })//end of json.data.forEach 
 
-        displayDiv.innerHTML += `<p class="prompt">You searched for <b>"${cleanTerm}"</b><br>Here are the results based on your preferences.</p>`;
+        displayDiv.innerHTML += `<p id="testP" class="prompt">You searched for <b>"${cleanTerm}"</b><br>Here are the results based on your preferences.</p>`;
         
+        //print out the search results
         contentWithTags.forEach( content => {
             let contentDiv = document.createElement('div');
             contentDiv.classList.add('addedDiv');
@@ -241,10 +221,22 @@ function displayResult(){
         })//end of s.forEach    
 
     });//end of getJson
+    setTimeout(highlight, 100);
     
 }//end of displayDivs
 
+// ===================  find searchedTerm  =========================
 
+function highlight(){
+    var instance = new Mark(displayDiv);
+    instance.mark(cleanTerm, {
+        "accuracy": "partially",
+        "separateWordSearch": "false"
+    });
+}
+
+
+// =================== show more function ==========================
 function showmore(){
     // console.log(event.target);
     let linkText = event.target.innerText;
@@ -276,7 +268,6 @@ function scrollFunction() {
         topBtn.style.display = "none";
     }
 }
-
 
 function topFunction() {
   document.body.scrollTop = 0;
