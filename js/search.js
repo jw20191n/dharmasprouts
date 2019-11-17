@@ -7,6 +7,7 @@ let bookTag = url.replace(/^.*?\=/,'');
 let cleanTerms = bookTag.split('+');
 let cleanTerm = cleanTerms.join(' ');
 cleanTerm = cleanTerm.replace('%27', "'");
+cleanTerm = cleanTerm.replace('%2C', ",");
 let searchedTerm = cleanTerm.toLowerCase();
  
 
@@ -231,7 +232,7 @@ function highlight(){
     var instance = new Mark(displayDiv);
     instance.mark(cleanTerm, {
         "accuracy": "partially",
-        "separateWordSearch": "false"
+        "separateWordSearch": false
     });
 }
 
