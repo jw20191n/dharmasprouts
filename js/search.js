@@ -1,109 +1,244 @@
 const displayDiv = document.getElementById('inner');
+let contentWithTags =[];//array that store all the books that has the searched tag
 
-let booksWithTag =[];//array that store all the books that has the searched tag
-
+//sorting url and save it to variable
 let url = window.location.toString();
 let bookTag = url.replace(/^.*?\=/,'');
 let cleanTerms = bookTag.split('+');
-// cleanTerm = cleanTerm.replace('%27', "'");
 let cleanTerm = cleanTerms.join(' ');
+cleanTerm = cleanTerm.replace('%27', "'");
+let searchedTerm = cleanTerm.toLowerCase();
  
-// console.log(cleanTerms);
 
 function displayResult(){
+    console.log(searchedTerm);
+
     $.getJSON( "db.json", function( json ) {
 
-        let books = json.data.filter(content => content.Tags.includes("Book"));
+        json.data.forEach( content => {
 
-        if (cleanTerms.length>0){
-            cleanTerms.forEach(keyword => {
-                books.forEach( book => {
-                    let lower = keyword.toLowerCase()
-                    if(!booksWithTag.includes(book)){
-                        let tags = book.Tags.map(tag=>tag.toLowerCase())
-                        let author = book.Author.map(author=>author.toLowerCase())
-                        let publisher = book.Publisher.toLowerCase();
-                        let notes = book.Notes.toLowerCase();
-                        if(publisher.includes(lower)||notes.includes(lower)){
-                            booksWithTag.push(book)
-                        }else{
-                            for(let i=0; i<tags.length;i++){
-                                if(tags[i].includes(lower)){
-                                    booksWithTag.push(book);
-                                }
-                            }
-                            for(let n=0; n<author.length;n++){
-                                if(author[n].includes(lower)){
-                                    booksWithTag.push(book)
-                                }
-                            }
-                        }     
-                    }
-                });
-            });
+            if(!contentWithTags.includes(content)){
+                let tags = content.Tags.map(tag => tag.toLowerCase());
+                let language = content.Language.map(lang => lang.toLowerCase());
 
-            let string = cleanTerms.join(', ');
-            displayDiv.innerHTML += `<p class="prompt">You searched for <b>"${string}"</b><br>Here is our recommendation based on your recommendation.</p>`;
-        }
-        // }else{
-        //     booksWithTag =  json.data.filter( book => book.Tags.includes(cleanTerm));
-        //     console.log(booksWithTag.length);
-        //     displayDiv.innerHTML += `<p class="prompt">You chosed <b>${cleanTerm}.</b><br>Here is our recommendation based on your recommendation.</p>`;
-        // }
-        
-            booksWithTag.forEach( book => {
-                let bookDiv = document.createElement('div');
-                bookDiv.classList.add('addedDiv');
-                bookDiv.setAttribute('id', `${book.id}`)
-                // console.log(book.Url);
-                bookDiv.innerHTML = `
-                    <div class="covers-div">
-                        <img src="${book.Url}" class="covers">
-                    </div>
-                    <h3>${book.Name}</h3>
-                    <p>Author: ${book.Author.join(" ")}</p>
-                    <p>Publisher: ${book.Publisher} </p>
-                    <p>Edition: ${book.Edition} </p>
-                    `
-                let newP = document.createElement('p');
-                newP.innerHTML = "Tags: ";
-                book.Tags.forEach(tag => {
-                    if(cleanTerms.length > 0 && cleanTerms.includes(tag)){
-                        newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>, `;
-                    }else if (cleanTerm == tag){
-                        newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>, `;
-                    } else{
-                        newP.innerHTML += `<a href="show_tags.html?val=${tag}">${tag}</a>, `;
+                if(content.Tags.includes('Book')){
+                    let authors = content.Author.map(author => author.toLowerCase());
+                    let illustrators = content.Illustrator.map(illustrator => illustrator.toLowerCase())
+               
+                    if(content.Name.toLowerCase().includes(searchedTerm) || content.Publisher.toLowerCase().includes(searchedTerm)){
+                        console.log('name or publisher')
+                        contentWithTags.push(content)
+                    }else if (content.Notes.toLowerCase().includes(searchedTerm)){
+                        console.log('notes')
+                        contentWithTags.push(content);
+                    }else if(authors.filter(author=> author.includes(searchedTerm)).length > 0 ){
+                        console.log('author')
+                        contentWithTags.push(content)
+                    }else if (illustrators.filter(illustrator=> illustrator.includes(searchedTerm)).length > 0 ){
+                        console.log('illustrator')
+                        contentWithTags.push(content)
+                    }else if(language.includes(searchedTerm)){
+                        console.log('language')
+                        contentWithTags.push(content)
+                    }else{
+                        for(let i=0; i<tags.length;i++){
+                            if(tags[i].includes(searchedTerm)){
+                                contentWithTags.push(content);
+                            }
+                        } 
                     }
+                }//end of if book
+                
+                if(content.Tags.includes('App')){
+                    let seller = content.Seller.map(seller => seller.toLowerCase());
                     
-                })
-                bookDiv.appendChild(newP);
-                bookDiv.innerHTML += `
+                    if(content.Name.toLowerCase().includes(searchedTerm)){
+                        console.log('name')
+                        contentWithTags.push(content)
+                    }else if (content.Notes.toLowerCase().includes(searchedTerm)){
+                        console.log('notes')
+                        contentWithTags.push(content);
+                    }else if(seller.filter(seller=> seller.includes(cleanTerm)).length > 0 ){
+                        console.log('seller')
+                        contentWithTags.push(content)
+                    }else if(language.includes(searchedTerm)){
+                        console.log('language')
+                        contentWithTags.push(content)
+                    }else{
+                        for(let i=0; i<tags.length;i++){
+                            if(tags[i].includes(searchedTerm)){
+                                contentWithTags.push(content);
+                            }
+                        } 
+                    }
+                }//end of if app
+
+                if(content.Tags.includes('Song')){
+                    let singer = content.Singer.map(singer => singer.toLowerCase());
+                    
+                    if(content.Name.toLowerCase().includes(searchedTerm)){
+                        console.log('name')
+                        contentWithTags.push(content)
+                    }else if (content.Lyrics.toLowerCase().includes(searchedTerm)){
+                        console.log('lyrics')
+                        contentWithTags.push(content);
+                    }else if(singer.filter(singer=> singer.includes(cleanTerm)).length > 0 ){
+                        console.log('singer')
+                        contentWithTags.push(content)
+                    }else if(language.includes(searchedTerm)){
+                        console.log('language')
+                        contentWithTags.push(content)
+                    }else{
+                        for(let i=0; i<tags.length;i++){
+                            if(tags[i].includes(searchedTerm)){
+                                contentWithTags.push(content);
+                            }
+                        } 
+                    }
+                }//end of if song
+
+                if(content.Tags.includes('Video')){
+                    let producer = content.Producer.map(producer => producer.toLowerCase());
+                    
+                    if(content.Name.toLowerCase().includes(searchedTerm)){
+                        console.log('name')
+                        contentWithTags.push(content)
+                    }else if (content.Notes.toLowerCase().includes(searchedTerm)){
+                        console.log('notes')
+                        contentWithTags.push(content);
+                    }else if(producer.filter(producer=> producer.includes(cleanTerm)).length > 0 ){
+                        console.log('producer')
+                        contentWithTags.push(content)
+                    }else if(language.includes(searchedTerm)){
+                        console.log('language')
+                        contentWithTags.push(content)
+                    }else{
+                        for(let i=0; i<tags.length;i++){
+                            if(tags[i].includes(searchedTerm)){
+                                contentWithTags.push(content);
+                            }
+                        } 
+                    }
+                }//end of if video
+
+                if(content.Tags.includes('Website')){
+                
+                    if(content.Name.toLowerCase().includes(searchedTerm)){
+                        console.log('name')
+                        contentWithTags.push(content)
+                    }else if (content.Notes.toLowerCase().includes(searchedTerm)){
+                        console.log('notes')
+                        contentWithTags.push(content);
+                    }else if(content.Publisher.toLowerCase().includes(searchedTerm)){
+                        console.log('publisher')
+                        contentWithTags.push(content)
+                    }else if(language.includes(searchedTerm)){
+                        console.log('language')
+                        contentWithTags.push(content)
+                    }else{
+                        for(let i=0; i<tags.length;i++){
+                            if(tags[i].includes(searchedTerm)){
+                                contentWithTags.push(content);
+                            }
+                        } 
+                    }
+                }//end of if website
+
+            } //end of if !contentWithTags.includes(content)           
+        })//end of json.data.forEach 
+
+        displayDiv.innerHTML += `<p class="prompt">You searched for <b>"${cleanTerm}"</b><br>Here are the results based on your preferences.</p>`;
+        
+        contentWithTags.forEach( content => {
+            let contentDiv = document.createElement('div');
+            contentDiv.classList.add('addedDiv');
+            contentDiv.setAttribute('id', `${content.id}`);
+            contentDiv.innerHTML = `
+                <div class="covers-div">
+                    <img src="${content.Url}" class="covers" alt="${content.Name} Cover">
+                </div>
+                <h3>${content.Name}</h3>
+            `;
+
+            if(content.Tags.includes("Book")){
+                contentDiv.innerHTML += `
+                    <p><strong>Author:</strong> ${content.Author.join(" ")}</p>
+                    <p><strong>Publisher:</strong> ${content.Publisher} </p>
+                    <p><strong>Edition:</strong> ${content.Edition} </p>
                     <div class="bookContent hideContent">
-                        <p>Language: ${book.Language.join(" ")}</p>
-                        <p>Cover Type: ${book.CoverType}</p>
-                        <p>Pages: ${book.Pages}</p>
-                        <p>Illustrator: ${book.Illustrator.join(" ")}</p>
-                        <p>Description: ${book.Notes} <br> ${book.Access}</p>
+                        <p><strong>Language:</strong> ${content.Language.join(" ")}</p>
+                        <p><strong>Cover Type:</strong> ${content.CoverType}</p>
+                        <p><strong>Pages:</strong> ${content.Pages}</p>
+                        <p><strong>Illustrator:</strong> ${content.Illustrator.join(" ")}</p>
+                        <p><strong>Description:</strong> ${content.Notes} <br> ${content.Access}</p>
                     </div>
-                    <div class="show-more" onclick="showmore()">
-                        <a class="btn " type="button" href="#${book.id}">... show more</a>
-                    </div>`;
+                    `;
+            }else if(content.Tags.includes("App")){
+                contentDiv.innerHTML += `
+                    <p><strong>Seller:</strong> ${content.Seller.join(" ")}</p>
+                    <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
+                    <div class="bookContent hideContent">
+                        <p></strong>Description:</strong> ${content.Notes} </p>
+                    </div>
+                     `;         
+            }else if(content.Tags.includes("Song")){
+                contentDiv.innerHTML += `
+                    <p><strong>Singer:</strong> ${content.Singer.join(" ")}</p>
+                    <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
+                    <div class="bookContent hideContent">
+                        <p><strong>Lyrics:</strong> ${content.Lyrics.split("/").join("</br>")}</p>
+                        <p><strong>Source:</strong><a href="${content.Source}"> link to music</a></p>
+                    </div>
+                    `; 
+            }else if (content.Tags.includes("Video")){
+                let link;
+                if(content.Access.includes('http')){
+                    link = `<a href="${content.Access}">link to video</a>`
+                }else{
+                    link = content.Source
+                }
 
+                contentDiv.innerHTML += `
+                    <p><strong>Producer:</strong> ${content.Producer.join(" ")}</p>
+                    <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
+                    <div class="bookContent hideContent">
+                        <p><strong>Description:</strong> ${content.Notes.split("/").join("</br>")}</p>
+                        <p><strong>Source:</strong> ${link}</p>
+                    </div>
+                    `; 
+            }else if(content.Tags.includes("Website")){
+                contentDiv.innerHTML += `
+                    <p><strong>Publisher:</strong> ${content.Publisher} </p>
+                    <div class="bookContent hideContent">
+                        <p><strong>Language:</strong> ${content.Language.join(" ")}</p>
+                        <p><strong>Description:</strong> ${content.Notes} </p>
+                        <p><strong>Access:</strong><a href="${content.Access}"> ${content.Access}</a></p>
+                    </div>
+                    `;
+            }
 
-                // let innerText = bookDiv.innerText;
-
-                // cleanTerms.forEach(keyword=> {
-                //     let index = innerText.indexOf(keyword); 
-                //     if (index >= 0) { 
-                //         console.log('!')
-                //         innerText = innerText.substring(0,index) + "<span class='redLink'>" + innerText.substring(index,index+keyword.length) + "</span>" + innerText.substring(index + keyword.length);
-                //         bookDiv.innerText = innerText;
-                //     }
-                // })
-             
-                displayDiv.appendChild(bookDiv);
+            let newP = document.createElement('p');
+            newP.innerHTML = "<strong>Tags:</strong> ";
+            content.Tags.forEach(tag => {
+                if(cleanTerms.length > 0 && cleanTerms.includes(tag)){
+                    newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
+                }else if (cleanTerm == tag){
+                    newP.innerHTML += `<a href="show_tags.html?val=${tag}" class="redLink">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
+                } else{
+                    newP.innerHTML += `<a href="show_tags.html?val=${tag}">${tag}</a>&nbsp&nbsp&nbsp&nbsp`;
+                }
             })
+            contentDiv.appendChild(newP);
+
+            contentDiv.innerHTML+= `
+                <div class="show-more" onclick="showmore()">
+                    <a class="btn " type="button" href="#${content.id}">... show more</a>
+                </div>`;
+    
+
+            displayDiv.appendChild(contentDiv);
+
+        })//end of s.forEach    
 
     });//end of getJson
     
@@ -111,10 +246,10 @@ function displayResult(){
 
 
 function showmore(){
+    // console.log(event.target);
     let linkText = event.target.innerText;
-    let targetDiv = event.target.parentNode.previousElementSibling;
+    let targetDiv = event.target.parentNode.previousElementSibling.previousElementSibling;
  
-
     if(linkText === '... show more'){
         targetDiv.classList.remove('hideContent');
         targetDiv.classList.add('showContent');
@@ -124,7 +259,6 @@ function showmore(){
         targetDiv.classList.add('hideContent');
         event.target.innerText = '... show more';
     }
-
 }
 
 //======================  back to top button ========================
