@@ -1158,7 +1158,7 @@
 },
 {
 	"ISBN": "9789575983550",
-	"Name": ["Masters’ Key-Words D: A Way with Words"], 
+	"Name": "Masters’ Key-Words D: A Way with Words", 
 	"Author": ["郑栗儿", "Translator: 刘嘉路"],
 	"Tags": ["Book", "Karma, virtues and non-virtues", "Great masters", "Age 9-12", "Age 13+"],
 	"Language": ["Chinese", "English"],
@@ -1826,9 +1826,6 @@
 	"Name": "Buddhist Studies for Primary and Secondary Students",
 	"Tags": ["Website", "Compassion and loving kindness", "Refuge", "Life of the Buddha", "Buddha's previous lives aka Jataka tales", "Karma, virtues and non-virtues", "Buddha's teachings aka Four Noble Truths, Eightfold Path, interdependent origination, five aggregates, etc.", "Meditation", "Folktales", "Family relationships", "Age 6-8", "Age 9-12", "Age 13+", "For Teachers"],
 	"Language": ["English"],
-	"CoverType": "-",
-	"Pages": 0, 
-	"Illustrator": ["-"],
 	"Publisher": "Buddha Dharma Education Association and BuddhaNet",
 	"Notes": "This extensive and well-developed Mahayana curriculum contains units on the Buddha’s life story, refuge, morality, meditation, Guided meditations, groups activities, stories, songs, puzzles, plays, quizzes.",
 	"Access": "buddhanet.net",
