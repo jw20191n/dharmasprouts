@@ -39,14 +39,23 @@ header {
 }
 
 div#header-left {
-    width: 50%
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 div#header-left img {
     margin-left: 30%;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-bottom:0;
     width: 321px;
     height:124px;
+}
+
+#introP{
+    /* margin-top:-10px; */
+    margin-left:32%;
+    color: #F5853F;
 }
 
 /* header right */
@@ -452,6 +461,13 @@ div#header-left img {
     height:124px;
 }    
 
+#introP{
+    margin-top:-20px;
+    margin-left:8%;
+    color: #F5853F;
+}
+
+
 /* header right */
 div#header-right-inner{
     margin-top: 50px;
@@ -548,6 +564,14 @@ div#header-left img {
     height:auto;
     text-align: center;
 }
+
+#introP{
+    margin-top:-10px;
+    margin-left:2%;
+    color: #F5853F;
+    font-size:10px;
+}
+
 
 div#header-right {
     display: inline-block;
