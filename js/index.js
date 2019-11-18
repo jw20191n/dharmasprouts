@@ -230,16 +230,37 @@ function printChnTags(file){
         ulDisplay.appendChild(tagDiv);
 
         for (keys in tags) {
-            if (keys === '适读年龄 13岁以上' || keys === '适读年龄 9-12岁'){
-                tagDiv.innerHTML += `<a href="chn.html"><span>${keys}(${tags[keys]}) | </span></a>`
-            }else{
-                tagDiv.innerHTML += `<span>${keys}(${tags[keys]}) | </span>`;
+            // if (keys === '智慧'){
+            //     let newUrl =   'show_tags.html?val=' + tagString;
+            // }
+            // let newUrl =   'show_tags.html?val=' + tagString;
+            let chnTagString = '';
+            switch(keys){
+                case '智慧':
+                    chnTagString =  'wisdomchn';
+                    break;
+                case '慈悲':
+                    chnTagString =  'comnpassionchn';
+                    break;
+                case '业力、善业与恶业':
+                    chnTagString =  'karmachn';
+                    break;
+                case '大师':
+                    chnTagString =  'masterchn';
+                    break;
+                case '适读年龄 9-12岁':
+                    chnTagString =  '9to12chn';
+                    break;
+                case '适读年龄 13岁以上':
+                    chnTagString =  '13upchn';
+                    break;
+                case '家庭关系':
+                    chnTagString =  'familychn';
+                    break;
             }
+            let chnUrl =   'chn.html?val=' + chnTagString;
+            tagDiv.innerHTML += `<a class="tagsLink" href="${chnUrl}"><li>${keys}(${tags[keys]})</li></a>`
         }
-
-        ulDisplay.innerHTML += `<div class="show-more" onclick="showmore()">
-        <span>... view full list</span>
-        </div>`
 
     });//end of getJson
 }

@@ -2,11 +2,43 @@ const displayDiv = document.getElementById('inner');
 const info = document.createElement('p');
 info.setAttribute('id', 'chn-info');
 
+let url = window.location.toString();
+let sortedUrl = url.replace(/^.*?\=/,'');
+
+console.log(sortedUrl);
 
 function displayDivs(){
     
     $.getJSON( "new-chn.json", function( json ) {
-        info.innerText = `目前dharma sprouts网站共收录、评论了${json.data.length}份佛教中文材料。所有的中文书籍都收录在此页面。未来，我们网站还将继续收集更多的中文佛教材料。感谢您的支持！`
+
+        switch(sortedUrl){
+            case '':
+                info.innerText = `目前dharma sprouts网站共收录、评论了${json.data.length}份佛教中文材料。所有的中文书籍都收录在此页面。未来，我们网站还将继续收集更多的中文佛教材料。感谢您的支持！`
+                break;
+            case 'comnpassionchn':
+                info.innerText = `您选择了"慈悲"。以下是根据您的选择筛选的内容。`
+                break;
+            case 'wisdomchn':
+                info.innerText = `您选择了"智慧"。以下是根据您的选择筛选的内容。`
+                break;
+            case 'karmachn':
+                info.innerText = `您选择了"业力、善业与恶业"。以下是根据您的选择筛选的内容。`
+                break;
+            case 'masterchn':
+                info.innerText = `您选择了"大师"。以下是根据您的选择筛选的内容。`
+                break;
+            case 'familychn':
+                info.innerText = `您选择了"家庭关系"。以下是根据您的选择筛选的内容。`
+                break;
+            case '9to12chn':
+                info.innerText = `您选择了"适读年龄 9-12岁"。以下是根据您的选择筛选的内容。`
+                break;
+            case '13upchn':
+                info.innerText = `您选择了"适读年龄 13岁以上"。以下是根据您的选择筛选的内容。`
+                break;
+        }
+
+        // info.innerText = `目前dharma sprouts网站共收录、评论了${json.data.length}份佛教中文材料。所有的中文书籍都收录在此页面。未来，我们网站还将继续收集更多的中文佛教材料。感谢您的支持！`
         displayDiv.appendChild(info);
         
         json.data.forEach( book => {
@@ -24,9 +56,18 @@ function displayDivs(){
                 `
             let newP = document.createElement('p');
             newP.innerHTML = "Tags: ";
-            book.Tags.forEach(tag => {
-                newP.innerText += `${tag},`
-            })
+
+            for(let i=0; i<book.Tags.length; i++){
+                if (i === book.Tags.length-1){
+                    newP.innerText += `${book.Tags[i]}`
+                }else {
+                    newP.innerText += `${book.Tags[i]}, `
+                }   
+            }
+            // book.Tags.forEach(tag => {
+            //     newP.innerText += `${tag},`
+            // })
+
             bookDiv.appendChild(newP);
             bookDiv.innerHTML += `
                 <div class="bookContent hideContent">
