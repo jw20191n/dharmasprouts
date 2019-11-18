@@ -220,9 +220,9 @@ function displayResult(){
             displayDiv.appendChild(contentDiv);
 
         })//end of s.forEach    
-
+        
+        highlight();
     });//end of getJson
-    setTimeout(highlight, 100);
     
 }//end of displayDivs
 
