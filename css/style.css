@@ -29,6 +29,10 @@ button#yellow_button:hover{
     cursor: pointer;
 }
 
+button#yellow_button:focus{
+    outline:none;
+}
+
 /********************     HEADER   ****************** */
 /* header left */
 header {
