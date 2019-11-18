@@ -11,37 +11,46 @@ function displayDivs(){
     
     $.getJSON( "new-chn.json", function( json ) {
 
+        let filterData = [];
+
         switch(sortedUrl){
             case '':
-                info.innerText = `目前dharma sprouts网站共收录、评论了${json.data.length}份佛教中文材料。所有的中文书籍都收录在此页面。未来，我们网站还将继续收集更多的中文佛教材料。感谢您的支持！`
+                info.innerText = `目前dharma sprouts网站共收录、评论了${json.data.length}份佛教中文材料。所有的中文书籍都收录在此页面。未来，我们网站还将继续收集更多的中文佛教材料。感谢您的支持！`;
+                filterData = json.data;
                 break;
             case 'comnpassionchn':
-                info.innerText = `您选择了"慈悲"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"慈悲"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("慈悲"));
                 break;
             case 'wisdomchn':
-                info.innerText = `您选择了"智慧"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"智慧"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("智慧"));
                 break;
             case 'karmachn':
-                info.innerText = `您选择了"业力、善业与恶业"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"业力、善业与恶业"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("业力、善业与恶业"));
                 break;
             case 'masterchn':
-                info.innerText = `您选择了"大师"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"大师"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data;
                 break;
             case 'familychn':
-                info.innerText = `您选择了"家庭关系"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"家庭关系"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("家庭关系"));
                 break;
             case '9to12chn':
-                info.innerText = `您选择了"适读年龄 9-12岁"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"适读年龄 9-12岁"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data;
                 break;
             case '13upchn':
-                info.innerText = `您选择了"适读年龄 13岁以上"。以下是根据您的选择筛选的内容。`
+                info.innerText = `您选择了"适读年龄 13岁以上"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data;
                 break;
         }
 
-        // info.innerText = `目前dharma sprouts网站共收录、评论了${json.data.length}份佛教中文材料。所有的中文书籍都收录在此页面。未来，我们网站还将继续收集更多的中文佛教材料。感谢您的支持！`
         displayDiv.appendChild(info);
-        
-        json.data.forEach( book => {
+
+        filterData.forEach( book => {
             let bookDiv = document.createElement('div');
             bookDiv.classList.add('addedDiv');
             bookDiv.setAttribute('id', `${book.id}`)
