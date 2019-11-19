@@ -27,21 +27,48 @@ function displayDivs(){
                     contentWithTag.push(data[i]);
                 }
             }
-        
-        // below show broader result that if one of tags your set is met
-        // item would appear on the screen 
-        
-        //     newContentTags.forEach(tag => {
-        //         json.data.forEach( content => {
-        //             if(content.Tags.includes(tag) && !(contentWithTag.includes(content))){
-        //                 contentWithTag.push(content);
-        //             }
-        //         });
-        //     });
 
             let string = newContentTags.join(', ');
             if(contentWithTag.length === 0){
-                displayDiv.innerHTML += `<p class="prompt">You chose <b>${string}.</b><br>No results found. Please try reset your preferences.</p>`;
+    
+                displayDiv.innerHTML += `<p class="prompt">You chose <b>${string}.</b><br>No exact result found. Here are materials relevant to your preferences.</p>`;
+
+                // below show broader result that if one of tags your set is met
+                // item would appear on the screen
+                let object = {};
+                newContentTags.forEach(tag => {
+                    json.data.forEach( content => {
+                        if(content.Tags.includes(tag)){
+                            if(contentWithTag.includes(content)){
+                                if(!object[content.Name]){
+                                    object[content.Name] = 1;
+                                }else{
+                                    object[content.Name] += 1;
+                                }
+                            }else{
+                                contentWithTag.push(content);
+                            }   
+                        }
+                    });
+                });//end of newContentTags.forEach
+
+                //sortedObject is an array of object names
+                let sortedObject = Object.keys(object).sort(function(a,b){return object[a]-object[b]})
+                // console.log(sortedObject.length);
+                
+                //delete items that fufill multiple tags and add then to the beginning of the contentWithTag array
+                let objectArray = [];
+                for(i=0;i<sortedObject.length;i++){
+                    let item = contentWithTag.find(content=> content.Name === sortedObject[i]);
+                    let index = contentWithTag.indexOf(item);
+                    contentWithTag.splice(index, 1);
+                    objectArray.push(item);
+                }
+                for(i=0;i<objectArray.length;i++){
+                    contentWithTag.unshift(objectArray[i]);
+                }
+                
+          
             }else{
                 displayDiv.innerHTML += `<p class="prompt">You chose <b>${string}.</b><br>Here are the results based on your preferences.</p>`;
             }
@@ -53,6 +80,7 @@ function displayDivs(){
         }
             
             contentWithTag.forEach( content => {
+                
                 let contentDiv = document.createElement('div');
                 contentDiv.classList.add('addedDiv');
                 contentDiv.setAttribute('id', `${content.id}`);
