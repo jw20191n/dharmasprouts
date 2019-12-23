@@ -118,7 +118,7 @@ function displayDivs(){
                         <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
                         <div class="bookContent hideContent">
                             <p><strong>Lyrics:</strong> ${content.Lyrics.split("/").join("</br>")}</p>
-                            <p><strong>Source:</strong><a href="${content.Source}"> link to music</a></p>
+                            <p><strong>Source:</strong><a target="_blank" rel="noopener noreferrer" href="${content.Access}"> link to music</a></p>
                         </div>
                         `; 
                 }else if (content.Tags.includes("Video")){
@@ -126,7 +126,7 @@ function displayDivs(){
                     if(content.Access.includes('http')){
                         link = `<a href="${content.Access}">link to video</a>`
                     }else{
-                        link = content.Source
+                        link = content.Access
                     }
 
                     contentDiv.innerHTML += `
