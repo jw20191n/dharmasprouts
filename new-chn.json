@@ -334,5 +334,53 @@
         "Notes": "这本书（套书26本之一）讲述了将藏传佛教理论介绍到汉地的法尊法师、力倡“看话禅”的大慧宗杲、爱国诗僧敬安、妙趣的大珠慧海、曹洞宗始祖洞山良价的故事。这些故事以双语讲述，并附有词汇表解释故事中的词汇难点，适合以中文为母语的英语学习者阅读。",
         "Access": "这本书可以在网上订购。",
 		"Url": "images/93-Z.png"
+	},
+	{
+		"id": 161,
+		"ISBN": "9780881398670",
+		"Name": "佛陀的智慧 1, 罗刹鬼与比丘",
+		"Author": ["宣化上人"],
+		"Tags": ["佛教故事", "慈悲", "适读年龄 6-8岁", "查看所有中文材料"],
+		"Language":["中文", "英文"],
+		"CoverType": "简装",
+		"Pages": 110,
+		"Illustrator": ["Bodhi Shr", "Alice Yeh"],
+		"Publisher": "Buddhist Text Translation Society",
+		"Edition": "2005",
+		"Notes": "本书介绍释迦牟尼佛过去生修行的故事，配合故事的内容，并绘出一幅幅生动的插画。希望藉此图文并茂的全彩设计，帮助孩子体会菩萨慈悲喜捨的精神，同时也明白因果道理。",
+		"Access": "这本书可以在网上订购。",
+		"Url": "images/161-rakshasaghost.png"	
+	},
+	{
+		"id": 162,
+		"ISBN": "9780881398632",
+		"Name": "佛陀的智慧 2, 真正的觉者",
+		"Author": ["宣化上人"],
+		"Tags": ["佛陀的一生", "慈悲", "智慧", "适读年龄 6-8岁", "查看所有中文材料"],
+		"Language":["中文", "英文"],
+		"CoverType": "简装",
+		"Pages": 138,
+		"Illustrator": ["Bodhi Shr", "Alice Yeh"],
+		"Publisher": "Buddhist Text Translation Society",
+		"Edition": "2005",
+		"Notes": "本书在平易的文字与生动的彩画中，描述释迦牟尼佛今生捨弃王位、出家修道，以及最后在菩提树下开悟的种种经过。",
+		"Access": "这本书可以在网上订购。",
+		"Url": "images/162-trulyawakenedone.jpg"
+	},
+	{
+		"id": 163,
+		"ISBN": "9867328403",
+		"Name": "悬命的蜘蛛丝",
+		"Author": ["Buddhist Text Translation Society (译者)"],
+		"Tags": ["业力、善业与恶业", "适读年龄 6-8岁", "查看所有中文材料"],
+		"Language":["中文", "英文"],
+		"CoverType": "简装",
+		"Pages": 128,
+		"Illustrator": ["Sporg Media Studio, India"],
+		"Publisher": "Buddhist Text Translation Society",
+		"Edition": "2009",
+		"Notes": "本书讲述我们要为自己的行为负责，以及饶恕的力量。",
+		"Access": "这本书可以在网上订购。",
+		"Url": "images/163-spidersthread.png"
 	}
 ]}

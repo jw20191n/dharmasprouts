@@ -32,7 +32,7 @@ function displayDivs(){
                 break;
             case 'masterchn':
                 info.innerText = `您选择了"大师"。以下是根据您的选择筛选的内容。`;
-                filterData = json.data;
+                filterData = json.data.filter(book => book.Tags.includes("大师"));
                 break;
             case 'familychn':
                 info.innerText = `您选择了"家庭关系"。以下是根据您的选择筛选的内容。`;
@@ -40,11 +40,23 @@ function displayDivs(){
                 break;
             case '9to12chn':
                 info.innerText = `您选择了"适读年龄 9-12岁"。以下是根据您的选择筛选的内容。`;
-                filterData = json.data;
+                filterData = json.data.filter(book => book.Tags.includes("适读年龄 9-12岁"));
                 break;
             case '13upchn':
                 info.innerText = `您选择了"适读年龄 13岁以上"。以下是根据您的选择筛选的内容。`;
-                filterData = json.data;
+                filterData = json.data.filter(book => book.Tags.includes("适读年龄 13岁以上"));
+                break;
+            case '6to8chn':
+                info.innerText = `您选择了"适读年龄 6-8岁"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("适读年龄 6-8岁"));
+                break;
+            case 'buddhalifechn':
+                info.innerText = `您选择了"佛陀的一生"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("佛陀的一生"));
+                break;
+            case 'storychn':
+                info.innerText = `您选择了"佛教故事"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("佛教故事"));
                 break;
         }
 

@@ -211,29 +211,27 @@ function changeToChinses() {
 
 function printChnTags(file){
     $.getJSON(file, function( json ) {
-        // console.log(json.data);
+
         json.data.forEach( book => {
             let tagsOfABook = book.Tags;//an array of a book's tags
 
-            tagsOfABook.forEach(tag => {
-                if (tags.hasOwnProperty(tag)){
-                    tags[tag] = tags[tag] + 1;
+            tagsOfABook.forEach(chnTag => {
+                if (tags.hasOwnProperty(chnTag)){
+                    tags[chnTag] = tags[chnTag] + 1;
                 }else{
-                    tags[tag] = 1;
+                    tags[chnTag] = 1;
                 }
             })
         })
 
         const tagDiv = document.createElement('div');
-        tagDiv.classList.add('tagLess');
+        // tagDiv.classList.add('tagLess');
         tagDiv.setAttribute('id', 'tag-div');
         ulDisplay.appendChild(tagDiv);
 
         for (keys in tags) {
-            // if (keys === '智慧'){
-            //     let newUrl =   'show_tags.html?val=' + tagString;
-            // }
-            // let newUrl =   'show_tags.html?val=' + tagString;
+            console.log(keys)
+
             let chnTagString = '';
             switch(keys){
                 case '智慧':
@@ -248,6 +246,9 @@ function printChnTags(file){
                 case '大师':
                     chnTagString =  'masterchn';
                     break;
+                case '适读年龄 6-8岁':
+                    chnTagString = '6to8chn';
+                    break;
                 case '适读年龄 9-12岁':
                     chnTagString =  '9to12chn';
                     break;
@@ -256,6 +257,12 @@ function printChnTags(file){
                     break;
                 case '家庭关系':
                     chnTagString =  'familychn';
+                    break;
+                case '佛陀的一生':
+                    chnTagString = 'buddhalifechn';
+                    break;
+                case '佛教故事':
+                    chnTagString = 'storychn';
                     break;
             }
             let chnUrl =   'chn.html?val=' + chnTagString;
