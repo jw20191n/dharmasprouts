@@ -143,7 +143,7 @@ function displayDivs(){
                         <div class="bookContent hideContent">
                             <p><strong>Language:</strong> ${content.Language.join(" ")}</p>
                             <p><strong>Description:</strong> ${content.Notes} </p>
-                            <p><strong>Access:</strong><a href="${content.Access}"> ${content.Access}</a></p>
+                            <p><strong>Access:</strong><a target="_blank" rel="noopener noreferrer" href="https://${content.Access}"> ${content.Access}</a></p>
                         </div>
                         `;
                 }
