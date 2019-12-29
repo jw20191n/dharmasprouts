@@ -174,7 +174,7 @@ function displayResult(){
             }else if (content.Tags.includes("Video")){
                 let link;
                 if(content.Access.includes('http')){
-                    link = `<a href="${content.Access}">link to video</a>`
+                    link = `<a target="_blank" rel="noopener noreferrer" href="${content.Access}">link to video</a>`
                 }else{
                     link = content.Access
                 }
