@@ -1,31 +1,31 @@
 const displayDiv = document.getElementById('inner');
 let contentWithTags =[];//array that store all the books that has the searched tag
 
-// //sorting url and save it to variable
-// let url = window.location.toString();
-// let urlString = url.replace(/^.*?\=/,'');
-// let cleanTerms = urlString.split('+');
-// let cleanTerm = cleanTerms.join(' ');
-// cleanTerm = cleanTerm.replace('%27', "'");
-// cleanTerm = cleanTerm.replace('%2C', ",");
-// cleanTerm = cleanTerm.replace("%3A", ":");
-// cleanTerm = cleanTerm.replace("%3F", "?");
-// let searchedTerm = cleanTerm.toLowerCase();
+//sorting url and save it to variable
+let url = window.location.toString();
+let urlString = url.replace(/^.*?\=/,'');
+let cleanTerms = urlString.split('+');
+let cleanTerm = cleanTerms.join(' ');
+cleanTerm = cleanTerm.replace('%27', "'");
+cleanTerm = cleanTerm.replace('%2C', ",");
+cleanTerm = cleanTerm.replace("%3A", ":");
+cleanTerm = cleanTerm.replace("%3F", "?");
+let searchedTerm = cleanTerm.toLowerCase();
 // console.log(searchedTerm);
  
 
 function displayResult(){
 
     //sorting url and save it to variable
-    let url = window.location.toString();
-    let urlString = url.replace(/^.*?\=/,'');
-    let cleanTerms = urlString.split('+');
-    let cleanTerm = cleanTerms.join(' ');
-    cleanTerm = cleanTerm.replace("%27", "'");
-    cleanTerm = cleanTerm.replace("%2C", ",");
-    cleanTerm = cleanTerm.replace("%3A", ":");
-    cleanTerm = cleanTerm.replace("%3F", "?");
-    let searchedTerm = cleanTerm.toLowerCase();
+    // let url = window.location.toString();
+    // let urlString = url.replace(/^.*?\=/,'');
+    // let cleanTerms = urlString.split('+');
+    // let cleanTerm = cleanTerms.join(' ');
+    // cleanTerm = cleanTerm.replace("%27", "'");
+    // cleanTerm = cleanTerm.replace("%2C", ",");
+    // cleanTerm = cleanTerm.replace("%3A", ":");
+    // cleanTerm = cleanTerm.replace("%3F", "?");
+    // let searchedTerm = cleanTerm.toLowerCase();
     // console.log(searchedTerm);
 
     $.getJSON( "db.json", function( json ) {
@@ -141,7 +141,6 @@ function displayResult(){
             }         
         })//end of json.data.forEach 
 
-        console.log(cleanTerm);
         displayDiv.innerHTML += `<p id="testP" class="prompt">You searched for <b>"${cleanTerm}"</b><br>Here are the results based on your preferences.</p>`;
         
         //print out the search results
