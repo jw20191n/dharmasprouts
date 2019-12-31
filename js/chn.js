@@ -58,6 +58,10 @@ function displayDivs(){
                 info.innerText = `您选择了"佛教故事"。以下是根据您的选择筛选的内容。`;
                 filterData = json.data.filter(book => book.Tags.includes("佛教故事"));
                 break;
+            case 'meditationchn':
+                info.innerText = `您选择了"禅修"。以下是根据您的选择筛选的内容。`;
+                filterData = json.data.filter(book => book.Tags.includes("禅修"));
+                break;
         }
 
         displayDiv.appendChild(info);

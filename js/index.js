@@ -264,6 +264,9 @@ function printChnTags(file){
                 case '佛教故事':
                     chnTagString = 'storychn';
                     break;
+                case '禅修':
+                    chnTagString = 'meditationchn';
+                    break;
             }
             let chnUrl =   'chn.html?val=' + chnTagString;
             tagDiv.innerHTML += `<a class="tagsLink" href="${chnUrl}"><li>${keys}(${tags[keys]})</li></a>`
