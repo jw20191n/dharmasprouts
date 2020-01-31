@@ -109,7 +109,7 @@ function displayDivs(){
                         <p><strong>Seller:</strong> ${content.Seller.join(" ")}</p>
                         <p><strong>Language:</strong> ${content.Language.join(" ")}</p> 
                         <div class="bookContent hideContent">
-                            <p></strong>Description:</strong> ${content.Notes} </p>
+                            <p><strong>Description:</strong> ${content.Notes} </p>
                         </div>
                          `;         
                 }else if(content.Tags.includes("Song")){

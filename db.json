@@ -1523,7 +1523,7 @@
     "Seller": ["BN Clarity Inc Oy"],
     "Tags": ["App", "Meditation", "Compassion and loving kindness", "Age 2-5", "Age 6-8", "Age 9-12", "Age 13+"],
     "Language": ["English", "French"],
-    "Notes": "This app is about meditation, not only in the sense of relaxing and feeling good, but training one's mind. It can be transformed so that one is able to cultivate basic human qualities such as benevolence, compassion, inner peace and inner strength. This way one's actions to benefit others, be a better person in society, care more for future generation are increased. The app offers in-app purchases, monthly or yearly plan, and some free contents for ages from 4 yo, and it takes us to basics of mind training, how to settle our mind, how to refine our attention, having more stable, clear, and calm mind. Specially one is able to develop an altruistic love, which is the best way to have a happy life and contribute to the happiness of others. Guided meditation, audios, contemplative aspects of arts created by Alan Wallace, Charles Hastings, Dominique Butet, Marie-Christine Champeaux-Cunin, Maria João Pires and Matthieu Ricard, are combined to encourage us to change the world from us. After reaching a big mass, it can change culture and institution eventually; there's no other way of changing society.",
+    "Notes": "This app is about training one’s mind through meditation, which can be transformed to cultivate basic human qualities such as benevolence, compassion, inner peace and inner strength. The app offers an option for a monthly or yearly plan, but also makes available some free content. Through various different modes of guided meditation, audio, and other contemplative aspects of arts, the creators of the app encourage us to change the world from within ourselves.",
 	"Url": "images/97-imagineclarity.png",
 	"id": 97
 },
@@ -1532,7 +1532,7 @@
     "Seller": ["Mindfulness Everywhere"],
     "Tags": ["App", "Meditation", "Age 6-8", "Age 9-12", "Age 13+"],
     "Language": ["English"],
-    "Notes": "On-the-go meditation app developed in order to help one gets to a point where one won't need it anymore. The meditation is categorised according to one’s activities or feelings and how much time there is available. Created by Rohan Gunatillake, mindfulness practitioner, this app costs $4.99.",
+    "Notes": "On-the-go meditation app developed with the intention of ultimately helping users reach a place of self-sufficiency without any further need for the app. The meditation sessions are categorized according to topics, as well as duration, to fit interests and schedules. Created by Rohan Gunatillake, mindfulness practitioner, this app costs $4.99.",
 	 "Url": "images/98-buddhify.png",
 	 "id": 98	 
 },
@@ -1571,7 +1571,7 @@
     "Producer": ["Geethanjali - Cartoons for Kids"],
     "Tags": ["Video", "Life of the Buddha", "Age 2-5", "Age 6-8"],
     "Language": ["English"],
-    "Notes": "These cartoons tell stories of Buddha’s birth and his life. The short stories compiled are 35 minutes long, and are told in English.",
+    "Notes": "These cartoons tell stories of Buddha’s birth and his life. Each of the short stories are approximately 35 minutes long.",
     "Access": "https://youtu.be/sU1Gv-MkH0U",
 	"Url": "images/102-birth.png",
 	"id": 102
@@ -1591,7 +1591,7 @@
     "Producer": ["Khyentse Norbu"],
     "Tags": ["Video", "Karma, virtues and non-virtues", "Age 6-8", "Age 9-12", "Age 13+"],
     "Language": ["English"],
-    "Notes": "From the monastery in exile in India, the students eager to watch the soccer World Cup will do everything they can in order to do it. It takes a lot of effort and friendship from the students while the abbot, head of the monastery, faces the challenges of teaching ancient Buddhism nowadays. Dzongsar Khyentse Rinpoche is the director and writer of this interesting movie.",
+    "Notes": "From the monastery at the foothills of the Himalayas, students eager to watch the World Cup will do everything they can to reach their goal. Through much effort, the student monks attempt to hook up a satellite dish to the monastery. Despite the general lightheartedness tone, the movie released in 1999 also depicts the challenges faced by the abbot as he struggles to teach ancient Buddhism in an increasingly modernized society. Dzongsar Khyentse Rinpoche, director and writer of this interesting movie, has received many accolades and awards for his films.",
     "Access": "Amazon Prime",
 	"Url": "images/104-thecup.png",
 	"id": 104
@@ -1859,7 +1859,7 @@
     "Producer": ["Nati Baratz"],
     "Tags": ["Video", "Death and rebirth", "Age 9-12", "Age 13+"],
     "Language": ["English"],
-    "Notes": "Touching 2008 documentary on the search of Geshe Lama Konchog's reincarnation by his attendant and long time student, Tenzin Zopa. Beautiful landscape from Nepal and remote Tibetan villages, faithful display of Buddhist culture. The movie is 102 minutes long and portrays the monk struggling to accomplish his task with success even though he is not confident he is really capable of doing so. He is nowadays Geshe Tenzin Zopa, an FPMT (Foundation for the Preservation of the Mahayana Tradition) teacher in charge of Tulku Tenzin Phuntsok Rinpoche education, the unmistaken child.",
+    "Notes": "Released in 2008, this is a touching 102 minute-long documentary on the search of Geshe Lama Konchog's reincarnation by his attendant and long time student, Tenzin Zopa. The documentary follows the monk as he struggles to accomplish his task, who ultimately reaches success. Beautiful landscape from Nepal and remote Tibetan villages faithfully display Buddhist culture.",
     "Access": "Amazon Prime",
 	"Url": "images/122-unmistakenchild.png",
 	"id": 122
@@ -1870,7 +1870,7 @@
     "Producer": ["Pentamedia Graphics Ltd"],
     "Tags": ["Video", "Life of the Buddha", "Age 2-5", "Age 6-8"],
     "Language": ["Hindi"],
-    "Notes": "Beautiful animated portrait of the life of Gautama Buddha in Hindi with English subtitles released in 2004. The movie is 87 minutes long and attempts to recount the existential struggle of Siddartha to realise the ultimate truth and achieve enlightenment, based on events told by Sir Edwin Arnold in his lovely long poem 'The light of Asia'.",
+    "Notes": "This is a beautiful animated portrait of the life of Gautama Buddha, in Hindi with English subtitles. Released in 2004, the 87-minute-long film attempts to recount the existential struggle of Siddhartha in his search for the ultimate truth and achieving enlightenment. The story is based on events told by Sir Edwin Arnold in his poem 'The Light of Asia'.",
     "Access": "https://youtu.be/PRstl25nVCw",
 	"Url": "images/123-legendofbuddha.jpg",
 	"id": 123
