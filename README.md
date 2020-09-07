@@ -15,5 +15,5 @@ The website allows parents and teachers to search for materials by age, by topic
 * Utilized GoogleAnalytics and GoogleSearchConsole to track website traffic.
 <br/> 
 
-This is a volunteer project for [Tsechen Kunchab Ling](https://sakyatemple.org/) .
+This is a freelance project for [Tsechen Kunchab Ling](https://sakyatemple.org/) .
 <br/>
