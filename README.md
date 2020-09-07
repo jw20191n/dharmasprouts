@@ -3,7 +3,7 @@
 The primary goal of **[DharmaSprouts](http://dharmasprouts.org/)**  was to build an aggregate website that catalogues and indexes English and Chinese Dharma materials for youth and children to help families and Dharma centers find and use the rich Buddhist materials already available. 
 The website allows parents and teachers to search for materials by age, by topic, or by language. Curriculum materials are also included. 
 
-![Screenshot of Dharmasprouts.org](images/screenshot.png | width=800)
+![Screenshot of Dharmasprouts.org](images/screenshot.png){:height="50%" width="50%"}
 
 * Designed and styled responsive site using Bootstrap and CSS, including customized logo and images. 
 * Developed algorithm recommending dharma materials based on the user’s input data.
