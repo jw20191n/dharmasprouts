@@ -5,7 +5,7 @@ The website allows parents and teachers to search for materials by age, by topic
 
 <img src="images/screenshot.png" width="70%">
 (desktop screen)
-<img src="images/screenshot-mobile.png"> 
+<img src="images/screenshot-mobile.png" height="70%"> 
 (responsive on smaller screens)
 
 * Designed and styled responsive site using Bootstrap and CSS, including customized logo and images. 
