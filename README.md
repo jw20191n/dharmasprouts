@@ -1,4 +1,4 @@
-# dharmasprouts.org :seedling: :herb: :evergreen_tree:
+#![dharmasprouts logo](images/newlogo.jpeg) 
 
 This is a volunteer project that I did for [Tsechen Kunchab Ling](https://sakyatemple.org/). <br/>
 <br/> 
