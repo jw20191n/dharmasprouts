@@ -1,4 +1,4 @@
-<h1 align="center"> [![dharmasprouts logo](images/newlogo.jpeg)](http://dharmasprouts.org) </h1>
+# [![dharmasprouts logo](images/newlogo.jpeg)](http://dharmasprouts.org) 
 
 ##Description
 The primary goal of **[DharmaSprouts](http://dharmasprouts.org/)**  was to build an aggregate website that catalogues and indexes English and Chinese Dharma materials for youth and children to help families and Dharma centers find and use the rich Buddhist materials already available. 
