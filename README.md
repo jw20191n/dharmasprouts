@@ -1,8 +1,4 @@
-# Dharmasprouts.org :seedling:
-
-<h1 align="center"> 
-  <a link="http://dharmasprouts.org"> <img src="images/newlogo.jpeg"> </a>
-</h1>
+# Dharmasprouts.org :seedling: <img src="images/newlogo.jpeg">
 
 ## Description
 The primary goal of the website was to build an aggregate website that catalogues and indexes English and Chinese Dharma materials for youth and children to help families and Dharma centers find and use the rich Buddhist materials already available. 
