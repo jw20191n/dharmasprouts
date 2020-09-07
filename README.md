@@ -1,5 +1,5 @@
 <h1 align="center"> 
-  <a link="http://dharmasprouts.org"> <img src="images/logo.png"> </a>
+  <a link="http://dharmasprouts.org"> <img src="images/newlogo.jpeg"> </a>
 </h1>
 
 ##Description
